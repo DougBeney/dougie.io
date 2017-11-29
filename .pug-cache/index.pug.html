@@ -1,0 +1,59 @@
+<div class="home-hero">
+  <div class="text-container">
+    <div class="text">
+      <div class="theHeading">dougie.io</div>
+      <div class="columns is-mobile" id="page-icons">
+        <div class="column"><a class="circle" href="/blog/" id="blog"><span class="fa fa-pencil"></span></a>
+          <div class="iconTitle">Blog</div>
+        </div>
+        <div class="column"><a class="circle" href="/projects/" id="projects"><span class="fa fa-suitcase"></span></a>
+          <div class="iconTitle">Projects</div>
+        </div>
+        <div class="column"><a class="circle" href="/book-notes/" id="book-notes"><span class="fa fa-bookmark"></span></a>
+          <div class="iconTitle">Book Notes</div>
+        </div>
+        <div class="column"><a class="circle" href="/contact/" id="contact"><span class="fa fa-envelope"></span></a>
+          <div class="iconTitle">Contact</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="home-section" id="blog_section">
+  <h2 class="sec-title">Recent Blog Posts</h2>
+  <div class="container" id="blog_loop">
+    {% assign rows = 6 | divided_by: 3.0 | ceil %}
+    {% for i in (1..rows) %}
+    <div class="columns">
+      {% assign offset = forloop.index0 | times: 3 %}
+      {% for post in site.posts limit:3 offset:offset %}
+      <div class="column is-one-third"><a href="{{post.url}}">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <div class="thumbnail" style="background-image: url({{post.thumbnail}});"></div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h3 class="is-3">{{post.title | truncatewords:10}}</h3>
+                <p>{{post.excerpt | strip_html | truncatewords:10}}</p><br/>
+                <time datetime="{{post.date}}">{{post.date | date_to_string}}</time>
+              </div>
+            </div>
+          </div></a></div>{% endfor%}
+    </div>{% endfor%}
+  </div>
+</div>
+<div class="home-section" id="book-notes_section">
+  <h2 class="sec-title">Recent Book Notes</h2>
+  <div class="container">
+    {% assign rows = 8 | divided_by: 4.0 | ceil %}
+    {% for i in (1..rows) %}
+    <div class="shelf columns is-mobile">
+      {% assign offset = forloop.index0 | times: 4 %}
+      {% for book in site.book-notes limit:4 offset:offset %}
+      <div class="column is-half-mobile is-one-fourth" id="book_column"><a href="{{book.url}}"><img src="{{book.cover}}"/></a></div>{% endfor%}
+    </div>{% endfor%}
+  </div>
+</div>

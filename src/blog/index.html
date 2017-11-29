@@ -1,0 +1,47 @@
+---
+title: The Blog
+layout: page
+---
+
+<div id="blog_post_list">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Date</th>
+				<th>Title</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for post in paginator.posts %}
+				<tr>
+					<td>{{post.date | date_to_long_string}}</td>
+					<td><a href="{{post.url}}">{{post.title | truncatewords:10}}    </a></td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+	<div class="pagination">
+		<div class="columns">
+
+			<div class="column">
+				{% if paginator.previous_page %}
+					<a href="{{ paginator.previous_page_path }}" class="button is-link is-outlined">Previous</a> 
+				{% endif %}
+			</div>
+			
+			<div class="column">
+				<span id="page_number">
+					Page: {{ paginator.page }} of {{ paginator.total_pages }}
+				</span>
+			</div>
+
+			<div class="column">
+				{% if paginator.next_page %}
+					<a href="{{ paginator.next_page_path }}" class="button is-link is-outlined">Next</a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	
+</div>

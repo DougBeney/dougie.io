@@ -1,0 +1,21 @@
+.container#blog_loop
+	| {% assign rows = 6 | divided_by: 3.0 | ceil %}
+	| {% for i in (1..rows) %}
+	.columns
+		| {% assign offset = forloop.index0 | times: 3 %}
+		| {% for post in site.posts limit:3 offset:offset %}
+		.column.is-one-third
+			a(href="{{post.url}}"): .card
+				.card-image
+					figure.image
+						//- 1000x600 image
+						.thumbnail(style="background-image: url({{post.thumbnail}})")
+						
+				.card-content
+					.content
+						h3.is-3 {{post.title | truncatewords:10}}
+						p {{post.excerpt | strip_html | truncatewords:10}}
+						br
+						time(datetime='{{post.date}}') {{post.date | date_to_string}}
+		| {% endfor%}
+	| {% endfor%}

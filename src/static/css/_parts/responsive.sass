@@ -1,0 +1,27 @@
+@media screen and (max-width: 340px)
+	#post_container
+		margin-top: 15px
+		.body 
+			p:first-child
+				&::first-letter
+					font-size: 30px
+		h1
+			font-size: 30px
+			margin: 40px 0
+			margin-top: 0
+			// text-align: left
+			&:before
+				bottom: -10px
+				left: 0%
+				width: 100%
+		.comment_section
+			#leaveacomment
+				font-size: 14px
+
+@media screen and (max-width: $max_image_width_page_size)
+	#post_container
+		.body
+			// When screen is greater than (750px + x%), adjust image
+			img
+				max-width: 100%
+				left: 0px

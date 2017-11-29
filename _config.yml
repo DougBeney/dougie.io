@@ -1,0 +1,38 @@
+source: src
+destination: dist
+
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+sass:
+  sass_dir: static/css
+
+css:
+  - https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+  - https://fonts.googleapis.com/css?family=Righteous|Merriweather
+  - //fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic
+  - /static/css/main.css
+
+js:
+  - https://code.jquery.com/jquery-3.2.1.min.js
+  - /static/js/main.js
+
+collections:
+  book-notes:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /:categories/:title/
+  -
+    scope:
+      path: ""
+      type: "book-notes"
+    values:
+      layout: "post"
+      permalink: /:categories/:title/
