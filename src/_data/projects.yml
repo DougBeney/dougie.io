@@ -1,2 +1,12 @@
 - title: Jekyll-Pug
+  users: '1,570+'
+  users_metric: downloads
+  url: https://jekyll-pug.dougie.io
+  thumbnail: http://jekyll-pug.dougie.io/static/img/open-graph.png
+  description: Easily and Intuitively Use Pug For Developing Jekyll Websites.
 - title: Popsicle
+  users: '113'
+  users_metric: users
+  url: https://chrome.google.com/webstore/detail/popsicle-a-minimalist-new/loigpbgkmjjhjodnhlpmbjmojchpdjih?hl=en
+  description: A very minimal New Tab extension for Google Chrome.
+  thumbnail: https://lh3.googleusercontent.com/XASDNUGXkhJqivGw0xZB56KlCyLeV5S3qko8HQUSsTxmvxQnDFmjn8YXvCvFgRw-GHi_ljxy=w640-h400-e365

@@ -14,7 +14,8 @@ nav.navbar
 					| Projects
 				.navbar-dropdown.is-boxed
 					| {% for project in site.data.projects %}
-					a.navbar-item(href='/projects/{{project.id}}')
+					| {% assign project_slug = project.title | downcase | replace: ' ', '_'%}
+					a.navbar-item(href='/projects/#project_{{project_slug}}')
 						| {{project.title}}
 					| {% endfor %}
 			a.navbar-item(href='/book-notes/') Contact
