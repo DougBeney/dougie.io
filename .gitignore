@@ -1,0 +1,4 @@
+.pug-cache
+.sass-cache
+dist/
+Gemfile.lock
