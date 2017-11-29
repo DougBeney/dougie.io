@@ -12,7 +12,7 @@ layout: page
 	| {% assign project_slug = project.title | downcase | replace: ' ', '_'%}
 	.column(id="project_{{project_slug}}"): .card
 		.card-image: figure
-			#thumbnail(style="background-image: url({{project.thumbnail}});")
+			a(href="{{project.url}}", target="_blank"): #thumbnail(style="background-image: url({{project.thumbnail}});")
 		.card-content
 			h2.title.is-3#title {{project.title}}
 			h3.subtitle.is-5#subtitle {{project.users}} {{project.users_metric}}
