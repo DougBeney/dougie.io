@@ -18,9 +18,21 @@
             border-radius: 9999px
             justify-content: center
             align-items: center
-
+            position: relative
+            &:before
+                z-index: 0
+                position: absolute
+                left: 50%
+                top: 50%
+                content: ''
+                background: #DE555E
+                border-radius: 9999px
+                +size(0%)
+                transition: 300ms ease-in
             span
                 font-size: 2.7em
+                position: relative
+                z-index: 1
         .iconTitle
             font-weight: 900
             transition: 200ms ease-in
@@ -35,6 +47,11 @@
             .iconTitle
                 opacity: 1
                 transform: translateY(0)
+            .circle
+                &:before
+                    left: 0
+                    top: 0
+                    +size(100%)
 
 
     +media("max-width: 750px")

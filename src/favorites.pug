@@ -1,0 +1,34 @@
+---
+title: Favorites
+layout: post-no-comments
+---
+
+p On this page, I have added all of my favorite tools/resources that help me the most on a daily basis. Everything is categorized to help you find what is most relevant to you.
+
+h2 Table of Contents
+
+ul
+	li Placeholder
+	li Placeholder
+	li Placeholder
+	li Placeholder
+.favorites
+	| {% for category in site.data.favorites %}
+	hr
+	.category
+		h3#title {{category.title}}
+		p#description {{category.description}}
+		.choices
+			| {% for choice in category.choices%}
+			.item
+				h4#title {{choice.title}}
+				p#description {{choice.description}}
+				a(href="{{choice.url}}", target="_blank")
+					button.button Check out {{choice.title}}
+				| {% if choice.notes %}
+				p 
+					strong Notes: 
+					| {{choice.notes}}
+				| {% endif %}
+			| {% endfor %}
+	| {% endfor %}

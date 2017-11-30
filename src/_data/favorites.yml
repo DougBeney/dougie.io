@@ -1,0 +1,11 @@
+- title: Security
+  description: Apps and Tools to keep your data private and secure.
+  choices: 
+    - title: Dropbox + 
+      description: Dropbox, as we all know, is one of the largest cloud file hosting providers. 
+      url: https://dropbox.com/
+      notes: Also, Mega.nz is another good choice. They offer 50GB free which is quite nice.
+    - title: Cryptomator
+      description: Cryptomator add client-side encryption to keep your files even more secure from unwanted eyes.
+      url: https://cryptomator.org/
+      notes: You can use any cloud file hosting service with Cryptomator. 

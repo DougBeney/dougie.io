@@ -18,6 +18,7 @@ nav.navbar
 					a.navbar-item(href='/projects/#project_{{project_slug}}')
 						| {{project.title}}
 					| {% endfor %}
+			a.navbar-item(href='/favorites/') Favorites
 			a.navbar-item(href='/contact/') Contact
 		.navbar-end
 			.navbar-item
@@ -29,7 +30,7 @@ nav.navbar
 							span
 								| Follow
 					p.control
-						a.button.is-primary(href='https://github.com/jgthms/bulma/archive/0.5.1.zip')
+						button.button.is-primary()#open_button
 							span.icon
 								i.fa.fa-envelope 
 							span Subscribe

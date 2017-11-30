@@ -1,0 +1,66 @@
+#post_container
+	width: $page_width
+	max-width: calc(100% - 5px)
+	min-height: 100vh
+	margin: 30px auto
+	font-size: 19px
+	line-height: 2
+	font-family: 'Merriweather', georgia, serif
+
+	// 5px padding to look good on mobile
+	box-sizing: border-box
+	padding: 0 5px
+	
+	.body
+		img
+			max-width: $max_image_width
+			position: relative
+			left: ($max_image_width - 100%) / 2 * -1
+			transition: 100ms ease-in
+		p:first-child
+			&::first-letter
+				letter-spacing: 3px
+				font-size: 40px
+				line-height: 0
+				color: #3D3D3D
+
+	h1,h2,h3,h4,h5,h6
+		font-family: $default_fonts
+
+	h1, h2, h3, h4, h5, h6, p, blockquote, ul, pre
+		margin-bottom: 30px
+
+	@for $i from 1 through 6
+		h#{$i}
+			@extend .subtitle
+			@extend .is-#{$i}
+
+	ul
+		list-style: initial
+		padding-left: 50px
+		margin-top: -10px
+
+
+	#page_title
+		margin: 60px 0
+
+	.comment_section
+		max-width: $comments_width
+		margin: 0 auto
+		margin-top: 45px
+		
+		#leaveacomment
+			font-size: 25px
+			font-weight: 100
+			text-align: center
+			text-transform: uppercase
+			letter-spacing: 3px
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: -10px
+				left: 20%
+				width: 60%
+				height: 1px
+				background: #E7E7E7

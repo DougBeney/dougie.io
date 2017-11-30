@@ -29,3 +29,18 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 });
+
+
+// email popup
+email_popup_element = "#email_popup"
+close_button = ".close_button"
+open_button = "#open_button"
+
+$(open_button).click(function(){
+  $(email_popup_element).addClass('is-active')
+});
+
+$(close_button).click(function(){
+  $(email_popup_element).removeClass('is-active')
+  console.log('removing class')
+});
