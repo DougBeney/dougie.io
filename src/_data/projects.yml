@@ -2,7 +2,7 @@
   users: '1,570+'
   users_metric: downloads
   url: https://jekyll-pug.dougie.io
-  thumbnail: http://jekyll-pug.dougie.io/static/img/open-graph.png
+  thumbnail: https://jekyll-pug.dougie.io/static/img/open-graph.png
   description: Easily and Intuitively Use Pug For Developing Jekyll Websites.
 - title: Popsicle
   users: '113'
