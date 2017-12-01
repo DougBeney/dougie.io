@@ -12,3 +12,7 @@ clearcache:
 
 config:
 	subl _config.yml
+
+netlify:
+	npm install pug -g
+	jekyll build
