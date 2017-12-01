@@ -1,5 +1,5 @@
 # Host for viewing on multiple devices
-host: 192.168.123.158
+# host: 192.168.123.158
 
 source: src
 destination: dist
