@@ -1,10 +1,62 @@
-- title: Security
-  description: Apps and Tools to keep your data private and secure.
+- title: Learning
+  description: Ways to learn new skills.
   choices: 
-    - title: Dropbox + 
+    - title: Udemy
+      description: Tons of great courses. Be careful before you buy. Read reviews and check out the course structure to make sure it is right for you. 
+      url: https://udemy.com/
+      notes: Sign up for an account and wait for a flash sale to buy. They happen all the time and you can get expensive courses for $10.
+
+    - title: TheNewBoston (Programming)
+      description: A great YouTube channel / Website for beginners to learn programming.
+      url: https://thenewboston.com/
+
+    - title: Sentdex (Programming)
+      description: The greatest Python programming instructor on YouTube.
+      url: https://www.youtube.com/user/sentdex
+
+    - title: Duolingo
+      description: Fun and addictive way to learn a language. Good habit-builder.
+      url: https://www.duolingo.com/
+
+    - title: Chess.com
+      description: Get better at Chess for $5 a month. Video tutorials, puzzles, live matches, and more.
+      url: https://chess.com
+
+- title: Programming 
+  description: Tools for coding.
+  choices: 
+    - title: Python
+      description: My go-to programming language. Easy to learn, quick to build stuff, and has a great community.
+      url: https://www.python.org/
+      notes: See 'Learning' section to find great resources to learning how to code.
+    - title: Jekyll
+      description: Blog-ready static website generator.
+      url: https://jekyllrb.com
+      note: This website is built using Jekyll.
+    - title: Django
+      description: Powerful framework for creating web apps fast.
+      url: https://djangoproject.com/
+      notes: Uses Python. See 'Learning' section to find great resources to learning how to code.
+
+- title: Repositories
+  description: Collections of images, datasets, and more.
+  choices: 
+    - title: Vectorstock
+      description: Tons of vectors/icon packs/templates for $1 a piece.
+      url: https://vectorstock.com/
+
+    - title: LibreStock
+      description: Royalty-free stockimage search engine that searches many sources.
+      url: https://librestock.com/
+
+- title: Security
+  description: Apps and tools to keep your data private and secure.
+  choices: 
+    - title: Dropbox
       description: Dropbox, as we all know, is one of the largest cloud file hosting providers. 
       url: https://dropbox.com/
-      notes: Also, Mega.nz is another good choice. They offer 50GB free which is quite nice.
+      notes: Also, Mega.nz is a good choice. They offer 50GB free which is quite nice.
+
     - title: Cryptomator
       description: Cryptomator add client-side encryption to keep your files even more secure from unwanted eyes.
       url: https://cryptomator.org/
