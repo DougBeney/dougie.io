@@ -6,11 +6,11 @@
       url: https://udemy.com/
       notes: Sign up for an account and wait for a flash sale to buy. They happen all the time and you can get expensive courses for $10.
 
-    - title: TheNewBoston (Programming)
-      description: A great YouTube channel / Website for beginners to learn programming.
+    - title: TheNewBoston
+      description: A great YouTuber for beginners to learn programming from. Everything is explained in a very simple manner.
       url: https://thenewboston.com/
 
-    - title: Sentdex (Programming)
+    - title: Sentdex
       description: The greatest Python programming instructor on YouTube.
       url: https://www.youtube.com/user/sentdex
 
@@ -21,6 +21,28 @@
     - title: Chess.com
       description: Get better at Chess for $5 a month. Video tutorials, puzzles, live matches, and more.
       url: https://chess.com
+
+- title: Productivity 
+  description: Tools to help you manage everything.
+  choices: 
+    - title: Todoist
+      description: An incredibly powerful todolist app.
+      url: https://todoist.com
+
+    - title: Evernote
+      description: Wonderful digital note-taking app.
+      url: https://evernote.com
+
+- title: Business 
+  description: Tools to manage your business.
+  choices: 
+    - title: Mailchimp
+      description: I've bounced around through many email marketing services, but always come back to Mailchimp.
+      url: https://mailchimp.com
+
+    - title: Upwork
+      description: My favorite place to find talented freelancers.
+      url: https://upwork.com/
 
 - title: Programming 
   description: Tools for coding.
@@ -37,6 +59,9 @@
       description: Powerful framework for creating web apps fast.
       url: https://djangoproject.com/
       notes: Uses Python. See 'Learning' section to find great resources to learning how to code.
+    - title: Vue.js
+      description: Powerful Javascript library for designing user interfaces for websites.
+      url: https://vuejs.org/
 
 - title: Repositories
   description: Collections of images, datasets, and more.

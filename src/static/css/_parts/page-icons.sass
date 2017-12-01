@@ -55,11 +55,20 @@
 
 
     +media("max-width: 750px")
-        max-width: 450px
         .column
             .iconTitle
                 opacity: 1
                 transform: translateY(0)
+
+    +media("max-width: 500px")
+        .column
+            padding: 0
+            .circle                    
+                border: 5px solid white
+                +size(65px)
+                span
+                    font-size: 1.9em
+
     +media("max-width: 400px")
         .column
             .iconTitle
