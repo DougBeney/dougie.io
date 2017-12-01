@@ -5,11 +5,11 @@
 			p.modal-card-title Subscribe to the Newsletter!
 			button.delete(aria-label='close').close_button
 
-		form()
+		form(action="https://dougie.us12.list-manage.com/subscribe/post?u=792eb576c08df172439ec58e3&amp;id=28a1d42cd0", method="POST")
 			section.modal-card-body
 				.field
 					.control.has-icons-left.has-icons-right
-						input.input(type='email', placeholder='Enter your Email')
+						input.input(type='email', name="EMAIL", placeholder='Enter your Email', required="")
 						span.icon.is-small.is-left
 							i.fa.fa-envelope
 			footer.modal-card-foot
