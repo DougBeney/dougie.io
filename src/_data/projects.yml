@@ -4,8 +4,16 @@
   url: https://jekyll-pug.dougie.io
   thumbnail: https://jekyll-pug.dougie.io/static/img/open-graph.png
   description: Easily and Intuitively Use Pug For Developing Jekyll Websites.
+
+- title: User-Agent 007
+  users: '2570+'
+  users_metric: users
+  url: https://addons.opera.com/en/extensions/details/user-agent-007/
+  description: An Opera add-on to intuitively change your user-agent of websites you visit.
+  thumbnail: https://addons.opera.com/media/CACHE/images/extensions/86/229286/1.0.0-rev1/images/e5bd9aa32cd3f3100a8de7122a50ecf6/901507868879ee111460339c5575d26b.jpg
+
 - title: Popsicle
-  users: '113'
+  users: '110+'
   users_metric: users
   url: https://chrome.google.com/webstore/detail/popsicle-a-minimalist-new/loigpbgkmjjhjodnhlpmbjmojchpdjih?hl=en
   description: A very minimal New Tab extension for Google Chrome.

@@ -3,7 +3,7 @@ title: My Projects
 layout: page
 ---
 
-| {% assign rows = site.data.projects.size | divided_by: 2 | ceil %}
+| {% assign rows = site.data.projects.size | divided_by: 2.0 | ceil %}
 
 | {% for i in (1..rows) %}
 .columns.is-tablet#projects_loop
