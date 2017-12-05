@@ -62,6 +62,9 @@
     - title: Vue.js
       description: Powerful Javascript library for designing user interfaces for websites.
       url: https://vuejs.org/
+    - title: wxPython
+      description: Fantastic way to create cross-platform software fast and efficiently.
+      url: https://www.wxpython.org/
 
 - title: Repositories
   description: Collections of images, datasets, and more.
