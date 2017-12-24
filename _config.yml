@@ -23,6 +23,10 @@ js:
 collections:
   book-notes:
     output: true
+  scripts:
+    permalink: /s/:path
+    output: true
+
 
 defaults:
   -
