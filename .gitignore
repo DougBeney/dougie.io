@@ -2,3 +2,4 @@
 .sass-cache
 dist/
 Gemfile.lock
+*.swp
