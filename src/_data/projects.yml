@@ -18,3 +18,10 @@
   url: https://chrome.google.com/webstore/detail/popsicle-a-minimalist-new/loigpbgkmjjhjodnhlpmbjmojchpdjih?hl=en
   description: A very minimal New Tab extension for Google Chrome.
   thumbnail: https://lh3.googleusercontent.com/XASDNUGXkhJqivGw0xZB56KlCyLeV5S3qko8HQUSsTxmvxQnDFmjn8YXvCvFgRw-GHi_ljxy=w640-h400-e365
+
+- title: AzBezzle
+  users: 'Unknown amount of '
+  users_metric: users
+  url: https://github.com/DougBeney/Azbezzle
+  description: A CLI tool that checks the Amazon links on a certain web page to make sure all of the links contain your affiliate ID.
+  
