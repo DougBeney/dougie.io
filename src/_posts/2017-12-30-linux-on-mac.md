@@ -210,4 +210,6 @@ To This:
 
 ## Just Go For It
 
-Switching to a Linux-based distribution can be a great learning experience and with all of the customization, could increase your productivity while working on a computer.
+Switching to a Linux-based distribution is a lot of fun. You'll learn a lot along the way and its always nice to have the peace of mind that your operating system is not selling your data to advertisers (<nowiki>*</nowiki>Cough <nowiki>*</nowiki>Cough Windows 10).
+
+While Linux support on Mac might have not been the best five years ago, it's fantastic today. And it's only going to get better! Ubuntu 18.04 is supposedly going to support per-application DPI scaling, meaning that even with GTK2/Qt4 apps, you'll be able to view them properly on a HiDPI display.
