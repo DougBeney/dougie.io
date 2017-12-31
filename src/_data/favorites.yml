@@ -84,7 +84,9 @@
       description: Dropbox, as we all know, is one of the largest cloud file hosting providers. 
       url: https://dropbox.com/
       notes: Also, Mega.nz is a good choice. They offer 50GB free which is quite nice.
-
+    - title: CryFS
+      description: A command-line utility similar to Cryptomator. I use this instead of Cryptomator because I like its method of mounting volumes better.
+      url: https://www.cryfs.org/
     - title: Cryptomator
       description: Cryptomator add client-side encryption to keep your files even more secure from unwanted eyes.
       url: https://cryptomator.org/
