@@ -65,6 +65,9 @@
     - title: wxPython
       description: Fantastic way to create cross-platform software fast and efficiently.
       url: https://www.wxpython.org/
+    - title: My Vim Config
+      description: My custom configuration for the classic Vim editor 
+      url: https://github.com/DougBeney/my-vim-config
 
 - title: Repositories
   description: Collections of images, datasets, and more.
