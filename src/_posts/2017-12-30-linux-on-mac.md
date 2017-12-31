@@ -2,6 +2,7 @@
 title: A Practical Guide To Switching From Mac To Linux
 layout: post
 date: 2017-12-30 12:12 -0500
+thumbnail: /static/img/blog/penguin.jpg
 ---
 
 1. TOC
