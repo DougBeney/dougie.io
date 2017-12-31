@@ -206,7 +206,7 @@ You would change this line:
 
 To This:
 
-`Exec=spotify --force-device-scale-factor=1.5 %U`
+`Exec=spotify --force-device-scale-factor=2 %U`
 
 ## Just Go For It
 
