@@ -4,7 +4,7 @@ edit:
 	subl src
 
 serve:
-	jekyll serve
+	bundle exec jekyll serve
 
 clearcache:
 	rm -rf .pug-cache

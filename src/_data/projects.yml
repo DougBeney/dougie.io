@@ -5,6 +5,13 @@
   thumbnail: https://jekyll-pug.dougie.io/static/img/open-graph.png
   description: Easily and Intuitively Use Pug For Developing Jekyll Websites.
 
+- title: Pickachu
+  users: 'New!'
+  users_metric: ''
+  url: https://github.com/DougBeney/pickachu
+  thumbnail: /static/img/projects/pickachu.png
+  description: A Color, Date, and File chooser for Vim/NeoVim.
+
 - title: DougSheets
   users: 'New!'
   users_metric: ''
