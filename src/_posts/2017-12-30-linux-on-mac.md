@@ -3,6 +3,7 @@ title: A Practical Guide To Switching From Mac To Linux
 layout: post
 date: 2017-12-30 12:12 -0500
 thumbnail: /static/img/blog/penguin.jpg
+excerpt: You might be interested in switching from Mac to Linux for a variety of reasons. Perhaps you don't have full trust in Apple and would like to use and support an open-source operating system.
 ---
 
 1. TOC
@@ -158,13 +159,13 @@ Scroll down and press the plus icon to create a new shortcut combination. Name i
 
 ### Design / Creative
 
-- Adobe Photoshop -> [Gimp](https://www.gimp.org/)
+- Adobe Photoshop -> ~~Gimp~~ [Krita](https://krita.org/en/). ([It can support Retina displays](/krita-hidpi/).)
 - Adobe Illustrator -> [Inkscape](https://inkscape.org/en/)
-- Sony Vegas / Adobe Premiere -> [KdenLive](https://kdenlive.org/)
+- Sony Vegas / Adobe Premiere -> [KdenLive](https://kdenlive.org/) or [OpenShot](https://www.openshot.org/)
 
 ### Utility
 
-- Skitch, Monosnap, etc -> [Gnome-Screenshot](https://help.gnome.org/users/gnome-help/stable/screen-shot-record.html.en) (Or whichever screenshot tool comes with your distro) 
+- Skitch, Monosnap, etc -> [Kazam](http://www.ihaveapc.com/2014/02/take-screenshots-and-create-screencasts-using-kazam-in-ubuntu/) or [Gnome-Screenshot](https://help.gnome.org/users/gnome-help/stable/screen-shot-record.html.en)
 - Screenflow -> [Simple Screen Recorder](http://www.maartenbaert.be/simplescreenrecorder/)
 
 ### Fun / Games
