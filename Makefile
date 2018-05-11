@@ -14,5 +14,5 @@ config:
 	subl _config.yml
 
 netlify:
-	npm install pug -g
-	jekyll build
+	npm i jekyll-bliss -g
+	jekyllbliss build

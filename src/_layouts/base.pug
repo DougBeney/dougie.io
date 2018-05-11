@@ -22,13 +22,13 @@ html(lang="en")
 			[if lt IE 8]>
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 			<![endif]
-		include nav
+		include ../_includes/nav
 
 		| {{content}}
 
-		include footer
+		include ../_includes/footer
 
-		include email-optin
+		include ../_includes/email-optin
 
 		| {% for script in site.js %}
 		script(src="{{script}}")

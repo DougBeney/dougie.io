@@ -23,10 +23,10 @@ js: ["/static/js/home-page.js"]
 
 .home-section#blog_section
 	h2.sec-title Recent Blog Posts
-	include loops/posts
+	include _includes/loops/posts
 	
 | {% unless site.book-notes.size == 0 %}
 .home-section#book-notes_section
 	h2.sec-title Recent Book Notes
-	include loops/books.pug
+	include _includes/loops/books.pug
 | {% endunless %}

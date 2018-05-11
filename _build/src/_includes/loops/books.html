@@ -1,0 +1,3 @@
+<div class="container">{% assign rows = 8 | divided_by: 4.0 | ceil %}
+{% for i in (1..rows) %}<div class="shelf columns is-mobile">{% assign offset = forloop.index0 | times: 4 %}
+{% for book in site.book-notes limit:4 offset:offset %}<div class="column is-half-mobile is-one-fourth" id="book_column"><a href="{{book.url}}"><img src="{{book.cover}}"/></a></div>{% endfor%}</div>{% endfor%}</div>

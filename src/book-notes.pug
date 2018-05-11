@@ -8,7 +8,7 @@ layout: base
 	h1.title.is-1#page_title {{page.title}}
 
 	| {% unless site.book-notes.size == 0 %}
-	include loops/books
+	include _includes/loops/books
 	| {% else%}
 	h3.sec-subtitle No book notes (yet)
 	| {% endunless %}

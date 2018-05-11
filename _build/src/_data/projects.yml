@@ -1,0 +1,41 @@
+- title: Jekyll-Pug
+  users: '2,530+'
+  users_metric: downloads
+  url: https://jekyll-pug.dougie.io
+  thumbnail: https://jekyll-pug.dougie.io/static/img/open-graph.png
+  description: Easily and Intuitively Use Pug For Developing Jekyll Websites.
+
+- title: Pickachu
+  users: 'Unknown amount of '
+  users_metric: 'users'
+  url: https://github.com/DougBeney/pickachu
+  thumbnail: /static/img/projects/pickachu.png
+  description: A Color, Date, and File chooser for Vim/NeoVim.
+
+# - title: DougSheets
+#   users: 'New!'
+#   users_metric: ''
+#   url: https://github.com/DougBeney/DougSheets
+#   #thumbnail: https://jekyll-pug.dougie.io/static/img/open-graph.png
+#   description: An innovative spreadsheet application that makes it easy for developers to create powerful data filtering scripts.
+
+- title: User-Agent 007
+  users: '3470+'
+  users_metric: users
+  url: https://addons.opera.com/en/extensions/details/user-agent-007/
+  description: An Opera add-on to intuitively change your user-agent of websites you visit.
+  thumbnail: https://addons.opera.com/media/CACHE/images/extensions/86/229286/1.0.0-rev1/images/e5bd9aa32cd3f3100a8de7122a50ecf6/901507868879ee111460339c5575d26b.jpg
+
+- title: Popsicle
+  users: '110+'
+  users_metric: users
+  url: https://chrome.google.com/webstore/detail/popsicle-a-minimalist-new/loigpbgkmjjhjodnhlpmbjmojchpdjih?hl=en
+  description: A very minimal New Tab extension for Google Chrome.
+  thumbnail: https://lh3.googleusercontent.com/XASDNUGXkhJqivGw0xZB56KlCyLeV5S3qko8HQUSsTxmvxQnDFmjn8YXvCvFgRw-GHi_ljxy=w640-h400-e365
+
+- title: AzBezzle
+  users: 'Unknown amount of '
+  users_metric: users
+  url: https://github.com/DougBeney/Azbezzle
+  description: A CLI tool that checks the Amazon links on a certain web page to make sure all of the links contain your affiliate ID.
+  
