@@ -1,6 +1,7 @@
+_build/
+_dist/
 .pug-cache
 .sass-cache
-dist/
 Gemfile.lock
 .ruby-version
 *.swp

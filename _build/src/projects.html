@@ -1,9 +1,0 @@
----
-title: My Projects
-layout: page
----
-
-{% assign rows = site.data.projects.size | divided_by: 2.0 | ceil %}
-{% for i in (1..rows) %}<div class="columns is-tablet" id="projects_loop">{% assign offset = forloop.index0 | times: 2 %}
-{% for project in site.data.projects limit:2 offset:offset %}
-{% assign project_slug = project.title | downcase | replace: ' ', '_'%}<div class="column" id="project_{{project_slug}}"><div class="card"><div class="card-image"><figure><a href="{{project.url}}" target="_blank"><div id="thumbnail" style="background-image: url({{project.thumbnail}});"></div></a></figure></div><div class="card-content"><h2 class="title is-3" id="title">{{project.title}}</h2><h3 class="subtitle is-5" id="subtitle">{{project.users}} {{project.users_metric}}</h3><p id="description">{{project.description}}</p><a class="button is-danger is-outlined" href="{{project.url}}" target="_blank">{{project.title}} website</a></div></div></div>{% endfor %}</div>{% endfor %}
