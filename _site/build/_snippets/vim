@@ -1,0 +1,6 @@
+---
+title: My VIM Configuration
+description: Git-clones my git configuration
+---
+
+git clone https://github.com/DougBeney/my-vim-config ~/.vim

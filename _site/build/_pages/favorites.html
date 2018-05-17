@@ -1,0 +1,11 @@
+---
+title: Favorites
+layout: post
+disable-commenting: true
+---
+
+<p>On this page, I have added all of my favorite tools/resources that help me the most on a daily basis. Everything is categorized to help you find what is most relevant to you.</p><div id="favorites_toc"><h2>Table of Contents</h2><ul>{% for category in site.data.favorites %}
+{% assign category_slug = "#" | append: category.title | downcase | replace: ' ', '_' | replace: '/', '_' %}<li><a href="{{category_slug}}">{{category.title}} </a>- {{category.description}}</li>{% endfor %}</ul></div><div id="favorites">{% for category in site.data.favorites %}
+{% assign category_slug = category.title | downcase | replace: ' ', '_' | replace: '/', '_' %}<hr/><div class="category" id="{{category_slug}}"><div class="title--description"><h3 id="title">{{category.title}}</h3><p id="description">{{category.description}}</p></div>{% assign rows = category.choices.size | divided_by: 2.0 | ceil %}
+{% for i in (1..rows) %}<div class="columns choices">{% assign offset = forloop.index0 | times: 2 %}
+{% for choice in category.choices limit:2 offset:offset %}<div class="column is-half"><div class="item"><h4 id="title">{{choice.title}}</h4><p id="description">{{choice.description}}</p><a href="{{choice.url}}" target="_blank"><button class="button is-link is-outlined">Check out {{choice.title}}</button></a>{% if choice.notes %}<p id="notes"><strong>Note: </strong>{{choice.notes}}</p>{% endif %}</div></div>{% endfor %}</div>{% endfor %}</div>{% endfor %}</div>

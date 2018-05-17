@@ -1,0 +1,45 @@
+---
+title: Favorites
+layout: post
+disable-commenting: true
+---
+
+p On this page, I have added all of my favorite tools/resources that help me the most on a daily basis. Everything is categorized to help you find what is most relevant to you.
+
+#favorites_toc
+	h2 Table of Contents
+	ul
+		| {% for category in site.data.favorites %}
+		| {% assign category_slug = "#" | append: category.title | downcase | replace: ' ', '_' | replace: '/', '_' %}
+		li
+			a(href="{{category_slug}}") {{category.title}} 
+			| - {{category.description}}
+		| {% endfor %}
+
+#favorites
+	| {% for category in site.data.favorites %}
+	| {% assign category_slug = category.title | downcase | replace: ' ', '_' | replace: '/', '_' %}
+	hr
+	.category(id="{{category_slug}}")
+		.title--description
+			h3#title {{category.title}}
+			p#description {{category.description}}
+
+		| {% assign rows = category.choices.size | divided_by: 2.0 | ceil %}
+		| {% for i in (1..rows) %}
+		.columns.choices
+			| {% assign offset = forloop.index0 | times: 2 %}
+			| {% for choice in category.choices limit:2 offset:offset %}
+			.column.is-half: .item
+				h4#title {{choice.title}}
+				p#description {{choice.description}}
+				a(href="{{choice.url}}", target="_blank")
+					button.button.is-link.is-outlined Check out {{choice.title}}
+				| {% if choice.notes %}
+				p#notes
+					strong Note: 
+					| {{choice.notes}}
+				| {% endif %}
+			| {% endfor %}
+		| {% endfor %}
+	| {% endfor %}

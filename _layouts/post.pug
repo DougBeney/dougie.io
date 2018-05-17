@@ -1,0 +1,11 @@
+---
+layout: base
+---
+
+.container#post_container
+	h1.title.is-1#page_title {{page.title}}
+	.body {{content}}
+	
+	| {% unless page.disable-commenting == true %}
+	include ../_includes/comments
+	| {% endunless %}

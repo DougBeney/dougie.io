@@ -1,0 +1,54 @@
+---
+title: Articles
+layout: page
+---
+
+<div id="blog_post_list">
+	<table class="table">
+		<thead>
+			<tr>
+				<th id="title_column">Title</th>
+				<th>Date</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for post in paginator.posts %}
+				<tr>
+					{% if post.icon %}
+						{% assign icon_name = post.icon %}
+					{% else %}
+						{% assign icon_name = "newspaper-o" %}
+					{% endif %}
+					<td><a href="{{post.url}}"><span class="fa fa-{{icon_name}}"></span> {{post.title | truncatewords:10}}    </a></td>
+					<td>{{post.date | date_to_long_string}}</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+	<div class="pagination">
+		<div class="columns">
+
+			<div class="column">
+				{% if paginator.previous_page %}
+					<a href="{{ paginator.previous_page_path }}" class="button is-link is-outlined">Previous</a> 
+				{% endif %}
+			</div>
+			
+			{% unless paginator.total_pages == 1%}
+			<div class="column">
+				<span id="page_number">
+					Page: {{ paginator.page }} of {{ paginator.total_pages }}
+				</span>
+			</div>
+			{% endunless %}
+
+			<div class="column">
+				{% if paginator.next_page %}
+					<a href="{{ paginator.next_page_path }}" class="button is-link is-outlined">Next</a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	
+</div>

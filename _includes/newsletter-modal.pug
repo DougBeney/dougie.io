@@ -1,0 +1,18 @@
+#email_popup.modal
+	.modal-background.close_button
+	.modal-card
+		header.modal-card-head
+			p.modal-card-title Subscribe to the dougie.io newsletter
+			button.delete(aria-label='close').close_button
+
+		form(action="https://dougie.us12.list-manage.com/subscribe/post?u=792eb576c08df172439ec58e3&amp;id=28a1d42cd0", method="POST")
+			section.modal-card-body
+				p Receive exclusive updates from dougie.io.
+				.field
+					.control.has-icons-left.has-icons-right
+						input.input(type='email', name="EMAIL", placeholder='Enter your Email', required="")
+						span.icon.is-small.is-left
+							i.fa.fa-envelope
+			footer.modal-card-foot
+				button.button.is-danger(type="submit") Subscribe
+				button.button.close_button(type="button") Cancel

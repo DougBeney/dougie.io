@@ -1,0 +1,8 @@
+---
+title: Dotfiles
+description: Clone my private dotfiles
+---
+
+git clone --recursive git@github.com:DougBeney/dotfiles.git &&\
+cd dotfiles &&\
+make
