@@ -1,25 +1,20 @@
 - title: Learning
   description: Ways to learn new skills.
   choices: 
-    - title: Udemy
-      description: Tons of great courses. Be careful before you buy. Read reviews and check out the course structure to make sure it is right for you. 
-      url: https://udemy.com/
-      notes: Sign up for an account and wait for a flash sale to buy. They happen all the time and you can get expensive courses for $10.
+    - title: Duolingo
+      description: Fun and addictive way to learn a language. Good habit-builder.
+      url: https://www.duolingo.com/
 
     - title: TheNewBoston
       description: A great YouTuber for beginners to learn programming from. Everything is explained in a very simple manner.
       url: https://thenewboston.com/
 
     - title: Sentdex
-      description: The greatest Python programming instructor on YouTube.
+      description: A fantastic instructor of the Python programming language
       url: https://www.youtube.com/user/sentdex
 
-    - title: Duolingo
-      description: Fun and addictive way to learn a language. Good habit-builder.
-      url: https://www.duolingo.com/
-
     - title: Chess.com
-      description: Get better at Chess for $5 a month. Video tutorials, puzzles, live matches, and more.
+      description: Get better at Chess
       url: https://chess.com
 
 - title: Productivity 
@@ -28,10 +23,6 @@
     - title: Todoist
       description: An incredibly powerful todolist app.
       url: https://todoist.com
-
-    - title: Evernote
-      description: Wonderful digital note-taking app.
-      url: https://evernote.com
 
 - title: Business 
   description: Tools to manage your business.
@@ -44,24 +35,73 @@
       description: My favorite place to find talented freelancers.
       url: https://upwork.com/
 
+    - title: Ahrefs
+      description: Best tool for anyone who is serious about SEO
+      url: https://ahrefs.com/
+
+    - title: Buzzstream
+      description: Powerful tool for email outreach
+      url: https://buzzstream.com
+
+- title: Cryptocurrency
+  description: Cryptocurrencies tools.
+  choices: 
+    - title: Trezor
+      description: Reliable hardware wallet I've used for years.
+      url: https://trezor.io
+
+    - title: Coinbase
+      description: Easy place to buy certain cryptocurrencies.
+      url: http://coinbase.com/
+
+    - title: 99Bitcoins
+      description: Beginner-friendly website about cryptocurrency
+      url: https://99bitcoins.com/
+
 - title: Programming 
-  description: Tools for coding.
+  description: Coding-related resources.
   choices: 
     - title: Python
       description: My go-to programming language. Easy to learn, quick to build stuff, and has a great community.
       url: https://www.python.org/
       notes: See 'Learning' section to find great resources to learning how to code.
+
     - title: Jekyll
       description: Blog-ready static website generator.
       url: https://jekyllrb.com
       note: This website is built using Jekyll.
+
     - title: Django
       description: Powerful framework for creating web apps fast.
       url: https://djangoproject.com/
       notes: Uses Python. See 'Learning' section to find great resources to learning how to code.
+
     - title: Vue.js
       description: Powerful Javascript library for designing user interfaces for websites.
       url: https://vuejs.org/
+
+- title: SysAdmin
+  description: Web hosting and general server creation.
+  choices: 
+    - title: Vultr
+      description: Easily create virtual private servers. Cheaper than DigitalOcean.
+      url: https://vultr.com
+
+    - title: CentOS
+      description: Linux server distribution similar to Red Hat Enterprise Linux.
+      url: https://www.centos.org/
+
+    - title: MailCow
+      description: Easy to create Dockerized email server.
+      url: https://mailcow.email/
+
+    - title: Zappa
+      description: Serverless hosting for Python-based web apps. SO CHEAP & FAST!
+      url: https://www.zappa.io/
+
+    - title: Namecheap
+      description: Reliable place to purchase domains.
+      url: https://namecheap.com
 
 - title: Repositories
   description: Collections of images, datasets, and more.
@@ -78,13 +118,15 @@
   description: Apps and tools to keep your data private and secure.
   choices: 
     - title: Dropbox
-      description: Dropbox, as we all know, is one of the largest cloud file hosting providers. 
+      description: Very reliable cloud storage.
       url: https://dropbox.com/
       notes: Also, Mega.nz is a good choice. They offer 50GB free which is quite nice.
-    - title: CryFS
-      description: A command-line utility similar to Cryptomator. I use this instead of Cryptomator because I like its method of mounting volumes better.
-      url: https://www.cryfs.org/
+
     - title: Cryptomator
       description: Cryptomator add client-side encryption to keep your files even more secure from unwanted eyes.
       url: https://cryptomator.org/
       notes: You can use any cloud file hosting service with Cryptomator. 
+
+    - title: CryFS
+      description: A command-line utility similar to Cryptomator. I use this instead of Cryptomator because I like its method of mounting volumes better.
+      url: https://www.cryfs.org/

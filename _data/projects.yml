@@ -2,8 +2,15 @@
   users: 'NEW'
   users_metric:  
   url: https://github.com/DougBeney/Jekyll-Bliss
-  thumbnail: https://jekyll-pug.dougie.io/static/img/open-graph.png
+  thumbnail: https://jekyll-pug.dougie.io/static/img/projects/bliss.jpg
   description: The Answer to Slow Compiles Time In Jekyll 
+
+- title: PyCryptolio
+  users: 'NEW'
+  users_metric:  
+  url: https://github.com/DougBeney/PyCryptolio
+  thumbnail: https://jekyll-pug.dougie.io/static/img/projects/pycryptolio.jpg
+  description: A command-line application to help you keep track of your cryptocurrency portfolio
 
 - title: Pickachu
   users: '100+'
