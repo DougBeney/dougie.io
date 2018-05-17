@@ -1,8 +1,5 @@
-_build/
-_dist/
-.pug-cache
-.sass-cache
 Gemfile.lock
 .ruby-version
 *.swp
-vendor/
+.vendor/
+.bundle/
