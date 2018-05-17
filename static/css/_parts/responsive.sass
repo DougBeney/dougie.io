@@ -12,11 +12,18 @@
 		height: 100%
 
 
-@media screen and (max-width: 340px)
-	.home-hero .text-container .text .theSubtitle
-		font-size: 25px
++media("max-width: 500px")
 	#post_container
 		margin-top: 15px
+		font-size: 14px
+		h1, h2, h3, h4, h5, h6, p, blockquote, ul, pre
+			margin-bottom: 10px
+		#page_title
+			font-size: 30px
+			margin-top: 0
+			margin-bottom: 30px
+			box-sizing: border-box
+			padding: 0 15px
 		.body 
 			p:first-child
 				&::first-letter
@@ -33,6 +40,10 @@
 		.comment_section
 			#leaveacomment
 				font-size: 14px
+
+@media screen and (max-width: 340px)
+	.home-hero .text-container .text .theSubtitle
+		font-size: 25px
 
 @media screen and (max-width: $max_image_width_page_size)
 	#post_container
