@@ -1,7 +1,8 @@
 ---
-title: Fix the "utf8mb4_unicode_520_ci" error when importing a SQL file
+title: How To Fix the "utf8mb4_unicode_520_ci" Error When Importing a SQL File
 date: 2018-05-20
 icon: database
+category: Answers
 ---
 
 Migrating a site from one server to the next is usually a pain. It's not that it's a difficult task in itself. It's just that you'll come across one silly error and end up spending days on it.

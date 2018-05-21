@@ -4,6 +4,9 @@ date: 2017-12-30 12:12 -0500
 thumbnail: /static/img/blog/penguin.jpg
 excerpt: You might be interested in switching from Mac to Linux for a variety of reasons. Perhaps you don't have full trust in Apple and would like to use and support an open-source operating system.
 icon: linux
+category: Linux
+tags: [Open-Source, Linux, Mac, Apple]
+permalink: linux/mac-guide
 ---
 
 1. TOC

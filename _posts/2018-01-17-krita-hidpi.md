@@ -3,6 +3,8 @@ title: Getting Krita to Work With Your HiDPI Display
 thumbnail: /static/img/blog/krita.jpg
 date: 2018-01-28
 icon: paint-brush
+category: Answers
+tags: [Linux, Open-Source, Design]
 ---
 
 Krita and Gimp are the most popular free and open-source image editors for Linux.

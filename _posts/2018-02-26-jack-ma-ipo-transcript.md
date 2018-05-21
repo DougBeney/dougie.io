@@ -3,6 +3,8 @@ title: Jack Ma's 1999 IPO Speech Introducing Alibaba [Transcript]
 thumbnail: /static/img/blog/jackma.png
 excerpt: In this clip from 1999, Jack Ma delivers a speech to 17 friends in his apartment to introduce Alibaba and lay out his plan to compete with U.S. internet titans.
 date: 2018-02-26
+category: Business
+tags: [Business, Alibaba, Motivation]
 ---
 
 <div class="video">
