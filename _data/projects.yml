@@ -13,7 +13,7 @@
   description: A command-line application to help you keep track of your cryptocurrency portfolio
 
 - title: Pickachu
-  users: '100+'
+  users: 'A ton of '
   users_metric: 'users'
   url: https://github.com/DougBeney/pickachu
   thumbnail: /static/img/projects/pickachu.png
