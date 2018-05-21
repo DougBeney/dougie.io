@@ -45,7 +45,7 @@
 			position: relative
 			left: ($max_image_width - 100%) / 2 * -1
 			transition: 100ms ease-in
-		p:first-child
+		&> p:first-child
 			&::first-letter
 				letter-spacing: 3px
 				font-size: 40px
@@ -57,11 +57,24 @@
 		font-weight: 600
 	h1, h2, h3, h4, h5, h6, p, blockquote, ul, pre
 		margin-bottom: 30px
-
+	
+	blockquote
+		padding-left: 30px
+		border-left: 20px solid rgb(243, 168, 154)
+		padding-top: 10px
+		padding-bottom: 10px
+		border-top-left-radius: 20px
+		border-bottom-left-radius: 20px
+		border-radius: 20px !important
+		p
+			margin: 0
+	
+	$base_size: 35px
 	@for $i from 1 through 6
 		h#{$i}
-			@extend .subtitle
-			@extend .is-#{$i}
+			font-family: 'Merriweather'
+			font-size: $base_size - 5px * ($i - 1)
+			line-height: 1.2
 
 	ul
 		list-style: initial
@@ -78,6 +91,7 @@
 		margin: 40px 0 60px 0
 		font-weight: 300
 		font-family: 'Merriweather'
+		font-size: 40px
 
 	.comment_section
 		max-width: $comments_width
