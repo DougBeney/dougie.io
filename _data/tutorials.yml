@@ -1,0 +1,11 @@
+- title: Create GUI Applications with GTK+3
+  slug: gtk3
+  description: A GTK+3 Tutorial
+  chapters:
+    - title: What you need
+      slug: getting-started
+      units:
+        - title: Installation
+          slug: 1
+    - title: Getting Started
+    - title: Advanced

@@ -21,11 +21,14 @@ js:
   - /static/js/main.js
 
 collections:
-  snippets:
-    permalink: /s/:path
-    output: true
   pages:
     permalink: :path
+    output: true
+  tutorials:
+    output: true
+    permalink: /:collection/:path
+  snippets:
+    permalink: /s/:path
     output: true
 
 defaults:
