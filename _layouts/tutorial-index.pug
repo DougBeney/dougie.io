@@ -19,10 +19,15 @@ mixin for(condition)
 	.tutorial-index: +TheTutorial
 		h1.title.is-1#page_title {{tut.title}}
 		h3.title.is-3#page_subtitle {{tut.description}}
+
 		+for('chapter in tut.chapters')
 			ul.chapter
 				.chapter-title {{chapter.title}}
 				+for('unit in chapter.units')
 					li.unit
 						a(href="/tutorials/{{tut.slug}}/{{chapter.slug}}/{{unit.slug}}") {{unit.title}}
+
+		| {% if page.coming-soon %}
+		p More content coming soon!
+		| {% endif %}
 
