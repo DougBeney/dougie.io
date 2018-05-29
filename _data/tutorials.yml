@@ -1,0 +1,18 @@
+- title: Create GUI Applications with GTK+3
+  slug: gtk3
+  description: A GTK3 Tutorial In C
+  chapters:
+    - title: Setup
+      slug: setup
+      units:
+        - title: Installing GTK+3
+          slug: install
+        - title: Compiling an Example App
+          slug: compiling
+    - title: Your First Apps
+      slug: your-first-apps
+      units:
+        - title: Creating Your First Window
+          slug: window
+        - title: Show a Button
+          slug: button
