@@ -19,7 +19,7 @@ He essentially tells you that there are three parts in your SQL file that you ha
 
 ## Fixing your SQL files through the magic of Python
 
-I decided to create a Python file to make this process easier. You can either [download the script here](/s/fixsqlutf.py) of copy-and-paste it from below.
+I decided to create a Python file to make this process easier. You can either <a rel="nofollow" href="/s/fixsqlutf.py">download the script here</a> or copy-and-paste it from below.
 
 There is only one change you have to make. Edit the `file_base_names` array and add the basenames of all of your files. (For example, if you have the file `mysite.sql`, the basename would be `mysite`) You could add as many basenames as you want.
 
