@@ -51,11 +51,12 @@
 				font-size: 40px
 				line-height: 0
 				color: #3D3D3D
+				font-weight: 900
 
 	h1,h2,h3,h4,h5,h6
 		font-family: $default_fonts
 		font-weight: 600
-	h1, h2, h3, h4, h5, h6, p, blockquote, ul, pre
+	h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, pre
 		margin-bottom: 30px
 	
 	blockquote
@@ -76,10 +77,12 @@
 			font-size: $base_size - 5px * ($i - 1)
 			line-height: 1.2
 
-	ul
+	ul, ol
 		list-style: initial
 		padding-left: 50px
 		margin-top: -10px
+		@media screen and (max-width: 500px)
+			padding-left: 15px
 
 	.highlight
 		pre
