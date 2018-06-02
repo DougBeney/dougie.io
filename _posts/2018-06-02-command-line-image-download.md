@@ -2,6 +2,8 @@
 layout: post
 title: Using Wget, Grep, and Sed to Download Public Domain Wallpapers From a Web Page
 date: 2018-06-02 09:43 -0400
+category: Linux
+tags: [Open-Source, Linux, Terminal, Coding]
 icon: terminal
 ---
 
