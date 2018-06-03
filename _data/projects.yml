@@ -1,21 +1,21 @@
 - title: Jekyll-Bliss
   users: 'NEW'
   users_metric:  
-  url: https://github.com/DougBeney/Jekyll-Bliss
+  url: https://gitlab.com/dougbeney/Jekyll-Bliss
   thumbnail: /static/img/projects/bliss.jpg
   description: The Answer to Slow Compiles Time In Jekyll 
 
 - title: PyCryptolio
   users: 'NEW'
   users_metric:  
-  url: https://github.com/DougBeney/PyCryptolio
+  url: https://gitlab.com/dougbeney/pyCryptolio
   thumbnail: /static/img/projects/pycryptolio.png
   description: A command-line application to help you keep track of your cryptocurrency portfolio
 
 - title: Pickachu
   users: 'A ton of '
   users_metric: 'users'
-  url: https://github.com/DougBeney/pickachu
+  url: https://gitlab.com/dougbeney/pickachu
   thumbnail: /static/img/projects/pickachu.png
   description: A Color, Date, and File chooser for Vim/NeoVim.
 
@@ -43,6 +43,6 @@
 - title: AzBezzle
   users: 'Unknown amount of '
   users_metric: users
-  url: https://github.com/DougBeney/Azbezzle
+  url: https://gitlab.com/dougbeney/Azbezzle
   description: A CLI tool that checks the Amazon links on a certain web page to make sure all of the links contain your affiliate ID.
   
