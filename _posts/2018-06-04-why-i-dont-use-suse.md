@@ -30,6 +30,12 @@ There are permission errors whether you install from Plasma's Discover or from t
 
 With a lot of important third-party software being easily availible through Flatpaks (Slack, Spotify, Skype, etc) it's a shame that this is not working out of the box.
 
+### Asking passwords too much?
+
+I have been prompted a ton of times in Discover (The software install GUI) to enter my root password.
+
+You're also asked for the root password when doing things like [adding a printer](https://www.reddit.com/r/openSUSE/comments/8dctyp/rant_mode_are_we_still_requiring_root_passwords/).
+
 ## Final Notes
 
 I believe OpenSUSE is close to having a great KDE distribution but just needs to iron-out some kinks. I could go on to mention further reasons why I don't use OpenSUSE but that gets into KDE defaults which I don't believe are fair to mention.
