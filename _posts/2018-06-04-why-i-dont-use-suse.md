@@ -1,6 +1,6 @@
 ---
 title: Why I Don't Use OpenSUSE
-date: 06-04-2018
+date: 2018-06-04
 category: Linux
 tags: [Open-Source, Linux]
 icon: desktop
