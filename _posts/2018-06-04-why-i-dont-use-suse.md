@@ -1,19 +1,22 @@
 ---
 title: Why I Don't Use OpenSUSE
 date: 06-04-2018
+category: Linux
+tags: [Open-Source, Linux]
+icon: desktop
 ---
 
 ## The Reasons
 
 ### Full-disk encryption is a pain during setup
 
-By default, it encrypts your boot partition. This makes you have to enter your disk's password twice - once for Grub and another time for OpenSUSE. Entering 'Expert Mode' and editing partitions to remedy this feels unintuitive, at least to me, compared to other distros' partition editors.
+By default, it encrypts your boot partition. This means you have to enter your disk's password twice - once for Grub and another time for OpenSUSE. Entering 'Expert Mode' and editing partitions to remedy this feels unintuitive, at least to me, compared to other distros' partition editors.
 
 ### 4.7gb ISO
 
 The installer file is quite large at almost 5gb. The advantage of this is that you have everything if you need to do an offline install.
 
-I don't think this should be their main image. Perhaps they could do what Debian does by offering multiple images.
+I don't think this should be their main image. Perhaps they could do what Debian does by offering multiple images of various sizes.
 
 They do offer an 85mb network install image which is nice but then you have a lot of downloading to do during setup.
 
