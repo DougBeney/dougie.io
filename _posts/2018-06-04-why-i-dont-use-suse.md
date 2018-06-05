@@ -12,6 +12,8 @@ icon: desktop
 
 By default, it encrypts your boot partition. This means you have to enter your disk's password twice - once for Grub and another time for OpenSUSE. Entering 'Expert Mode' and editing partitions to remedy this feels unintuitive, at least to me, compared to other distros' partition editors.
 
+EDIT: Since writing I have noticed [this fix](https://en.opensuse.org/SDB:Encrypted_root_file_system) by OpenSUSE on how to avoid having to enter your password twice. Good to see they documented a fix but it is still far to hacky for the end-user.
+
 ### 4.7gb ISO
 
 The installer file is quite large at almost 5gb. The advantage of this is that you have everything if you need to do an offline install.
