@@ -12,7 +12,9 @@ icon: desktop
 
 By default, it encrypts your boot partition. This means you have to enter your disk's password twice - once for Grub and another time for OpenSUSE. Entering 'Expert Mode' and editing partitions to remedy this feels unintuitive, at least to me, compared to other distros' partition editors.
 
-EDIT: Since writing I have noticed [this fix](https://en.opensuse.org/SDB:Encrypted_root_file_system) by OpenSUSE on how to avoid having to enter your password twice. Good to see they documented a fix but it is still far too hacky for the end-user.
+**EDIT**: Since writing I have noticed [this fix](https://en.opensuse.org/SDB:Encrypted_root_file_system) by OpenSUSE on how to avoid having to enter your password twice. Good to see they documented a fix but it is still far too hacky for the end-user.
+
+**EDIT 2**: So, I learned that it is actually very valid for SUSE to encrypt /boot. Someone who compromises your system could replace the kernel or initrd with a trojan'd version of it. This modified version could include a keylogger so that once you enter your password, it is recorded. Now, the situation of someone doing this to your computer without you knowing is extremely unlikely unless you're a person in power or maybe a boss with a smart disgruntled employee. Still, it's cool to see that SUSE took this into consideration. The question now is whether SUSE should implement that fix by default so an inexperienced end user wouldn't have to deal with it.
 
 ### 4.7gb ISO
 
