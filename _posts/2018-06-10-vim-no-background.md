@@ -14,8 +14,8 @@ Surprisingly, I couldn't find this info anywhere. But through hacking around wit
 
 ```vim
 highlight Normal ctermbg=none guibg=none
-highlight SignColumn guibg=none
-highlight LineNr guibg=none
+highlight SignColumn ctermbg=none guibg=none
+highlight LineNr ctermbg=none guibg=none
 ```
 
 ### GitGutter users WAIT!
