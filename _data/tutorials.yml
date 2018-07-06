@@ -2,6 +2,11 @@
   slug: gtk3
   description: A GTK3 Tutorial In C
   chapters:
+    - title: Intro
+      slug: intro
+      units:
+        - title: Resources
+          slug: resources
     - title: Setup
       slug: setup
       units:
