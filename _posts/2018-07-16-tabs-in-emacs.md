@@ -16,20 +16,21 @@ tags: [Coding, Emacs]
 {% highlight elisp %}
 ;;; START TABS CONFIG
 ;; Enable tabs and set prefered indentation width in spaces
-;; (I wanted by tab size to be 2 spaces)
+;; (In this case the indent size is 2-spaces wide)
 (setq-default indent-tabs-mode t)
 (setq-default standard-indent 2)
 (setq-default tab-width 2)
 
-;; Make the backspace properly erase the tab instead of removing 1 space
-;; at a time.
+;; Make the backspace properly erase the tab instead of
+;; removing 1 space at a time.
 (setq backward-delete-char-untabify-method 'hungry)
 
 ;; (OPTIONAL) Shift width for evil-mode users
+;; For the vim-like motions of ">>" and "<<".
 (setq-default evil-shift-width 2)
 
-;; Visualize tabs as a pipe character (\|)
-;; This also shows trailing characters
+;; Visualize tabs as a pipe character - "|"
+;; This will also show trailing characters as they are useful to spot.
 (setq whitespace-style '(face tabs tab-mark trailing))
 (custom-set-faces
  '(whitespace-tab ((t (:foreground "#636363")))))
