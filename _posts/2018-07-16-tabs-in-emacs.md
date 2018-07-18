@@ -35,7 +35,7 @@ tags: [Coding, Emacs]
 
 ;; Python tab support hook, as python.el frustratingly forces you to use spaces
 ;; Note that you'll need smart-tabs-mode for this to work
-(add-hook 'python-mode-hook (lambda () (setq tab-width custom-tab-width)))
+;; (add-hook 'python-mode-hook (lambda () (setq tab-width custom-tab-width)))
 
 ;; (OPTIONAL) Shift width for evil-mode users
 ;; For the vim-like motions of ">>" and "<<".
