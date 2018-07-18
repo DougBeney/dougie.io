@@ -29,3 +29,7 @@ var app2 = new Vue({
   }
 })
 </script>
+
+---
+
+**About this formula**: I [used Lisp](/coding/lisp-formula-generator/) to help create it.
