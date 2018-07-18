@@ -25,6 +25,13 @@ tags: [Coding, Emacs]
 ;; removing 1 space at a time.
 (setq backward-delete-char-untabify-method 'hungry)
 
+;; Uncomment the below line after installing smart-tabs-mode
+;;(smart-tabs-insinuate 'c 'javascript 'python)
+
+;; Python tab support hook, as python.el frustratingly forces you to use spaces
+;; Note that you'll need smart-tabs-mode for this to work
+(add-hook 'python-mode-hook (lambda () (setq tab-width custom-tab-width)))
+
 ;; (OPTIONAL) Shift width for evil-mode users
 ;; For the vim-like motions of ">>" and "<<".
 (setq-default evil-shift-width 2)
@@ -122,6 +129,32 @@ Then, for each mode we want tabs disabled in, we add a hook for it. In this case
 If you do not know the name of a a filetype's designated mode, you can open a file of that type, hit M-: (Alt + Shift + colon/semicolon), and type `major-mode`. Emacs will then tell you the current mode. After that, the hook function will typically be `{name of your mode}-hook`.
 
 For example, I did this in a `.c` file and found out that the mode was called `c-mode`.
+
+### SmartTabs
+
+The [Smart-tabs-mode](https://www.emacswiki.org/emacs/SmartTabs) package helps Emacs indent with tabs and align with spaces in various languages.
+
+If you are unsure of how to install packages in Emacs, you could refer to [this wiki entry](https://www.emacswiki.org/emacs/InstallingPackages) or [this video](https://www.youtube.com/watch?v=Cf6tRBPbWKs).
+
+After installing it, you can enable it in various languages as follows:
+
+{% highlight elisp %}
+(smart-tabs-insinuate 'c 'javascript 'python)
+{% endhighlight %}
+
+### Python Tabs Support
+
+PEP8 has some great code recommendation, however I completely disagree with their choice of spaces.
+
+To enable it, you must first get [SmartTabs configured](#smarttabs).
+
+After that, add the following hook to overwrite that tab width.
+
+Remember that `custom-tab-width` is a custom set variable and you could replace it with a regular integer if you please.
+
+{% highlight elisp %}
+(add-hook 'python-mode-hook (lambda () (setq tab-width custom-tab-width)))
+{% endhighlight %}
 
 ### Final Notes
 
