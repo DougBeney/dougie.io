@@ -2,8 +2,8 @@
 title: Formula to Get a Domain Name from a URL in Libreoffice & Excel (With Generator!)
 date: 2018-07-18
 icon: table
-category: Data
-tags: [Data Science, Libreoffice, Excel]
+category: spreadsheet-formulas
+tags: [Data-Science, Spreadsheets, Tech-Productivity-Tips]
 ---
 
 Enter the cell that contains your URL and the formula to get the domain name will be generated below.
