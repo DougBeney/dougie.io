@@ -17,9 +17,14 @@ tags: [Coding, Emacs]
 ;;; START TABS CONFIG
 ;; Enable tabs and set prefered indentation width in spaces
 ;; (In this case the indent size is 2-spaces wide)
+(setq custom-tab-width 2)
 (setq-default indent-tabs-mode t)
-(setq-default standard-indent 2)
-(setq-default tab-width 2)
+(setq-default standard-indent custom-tab-width)
+(setq-default tab-width custom-tab-width)
+
+;; (OPTIONAL) Shift width for evil-mode users
+;; For the vim-like motions of ">>" and "<<".
+(setq-default evil-shift-width custom-tab-width)
 
 ;; Make the backspace properly erase the tab instead of
 ;; removing 1 space at a time.
@@ -42,7 +47,7 @@ tags: [Coding, Emacs]
 (custom-set-faces
  '(whitespace-tab ((t (:foreground "#636363")))))
 (setq whitespace-display-mappings
-	'((tab-mark 9 [124 9] [92 9]))) ; 124 is the ascii ID for '\|'
+  '((tab-mark 9 [124 9] [92 9]))) ; 124 is the ascii ID for '\|'
 (global-whitespace-mode) ; Enable whitespace mode everywhere
 
 ;; Disable tabs and use spaces instead on Lisp and ELisp
@@ -57,15 +62,18 @@ tags: [Coding, Emacs]
 ### Using tabs for indentation and changing the indent size
 
 {% highlight elisp %}
+(setq custom-tab-width 2)
 (setq-default indent-tabs-mode t)
-(setq-default standard-indent 2)
-(setq-default tab-width 2)
-;(setq-default evil-shift-width 2)
+(setq-default standard-indent custom-tab-width)
+(setq-default tab-width custom-tab-width)
+;(setq-default evil-shift-width custom-tab-width)
 {% endhighlight %}
 
-The first three lines are important to make Emacs use tab indentation and to also set that indentation to a certain amount of spaces.
+The first four lines are important to make Emacs use tab indentation and to also set that indentation to a certain amount of spaces.
 
-If you use Evil Mode, it's worth also settings `evil-shift-width` as well. You would just have to uncomment that fourth line.
+You will notice that in the first line, we set `custom-tab-width` to 2. `custom-tab-width` is not a built-in Emacs variable and is instead one we have just made up. If we decide to change our prefered tab-width in the future. we only have to change one line of code rather than the two or three other places we define our tab width.
+
+If you use Evil Mode, it's worth also settings `evil-shift-width` as well. You would just have to uncomment that fifth line.
 
 ### Highlight tabs
 
