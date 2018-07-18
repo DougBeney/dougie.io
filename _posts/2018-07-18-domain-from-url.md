@@ -14,7 +14,7 @@ Enter the cell that contains your URL and the formula to get the domain name wil
 <br style="display: block; padding: 20px;"/>
 
 <pre style="margin-top: 15px">
-=SUBSTITUTE(LEFT(SUBSTITUTE(SUBSTITUTE({%raw%}{{cellValue}}{%endraw%}, "https://", ""), "http://", ""), FIND("/", SUBSTITUTE(SUBSTITUTE({%raw%}{{cellValue}}{%endraw%}, "https://", ""), "http://", ""), 3)-1), "www.", "")
+=IF(ISNUMBER(FIND("/", SUBSTITUTE(SUBSTITUTE(SUBSTITUTE({%raw%}{{cellValue}}{%endraw%}, "www.", ""), "http://", ""),"https://", ""), 3)), LEFT(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE({%raw%}{{cellValue}}{%endraw%}, "www.", ""), "http://", ""),"https://", ""), FIND("/", SUBSTITUTE(SUBSTITUTE(SUBSTITUTE({%raw%}{{cellValue}}{%endraw%}, "www.", ""), "http://", ""),"https://", ""), 3) - 1), SUBSTITUTE(SUBSTITUTE(SUBSTITUTE({%raw%}{{cellValue}}{%endraw%}, "www.", ""), "http://", ""),"https://", ""))
 </pre>
 
 </div>
