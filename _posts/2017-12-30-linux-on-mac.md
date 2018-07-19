@@ -162,7 +162,7 @@ Scroll down and press the plus icon to create a new shortcut combination. Name i
 
 ### Design / Creative
 
-- Adobe Photoshop -> ~~Gimp~~ [Krita](https://krita.org/en/). ([It can support Retina displays](/krita-hidpi/).)
+- Adobe Photoshop -> ~~Gimp~~ [Krita](https://krita.org/en/). ([It can support Retina displays](/answers/krita-hidpi/).)
 - Adobe Illustrator -> [Inkscape](https://inkscape.org/en/)
 - Sony Vegas / Adobe Premiere -> [KdenLive](https://kdenlive.org/) or [OpenShot](https://www.openshot.org/)
 
