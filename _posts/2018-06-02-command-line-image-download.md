@@ -290,7 +290,7 @@ wget -i urls.txt -P downloads/
 
 ### Script for downloading images from other sites
 
-You can alternatively download this script at [dougie.io/s/imageGetter.sh](dougie.io/s/imageGetter.sh).
+You can alternatively download this script at [dougie.io/s/imageGetter.sh](/s/imageGetter.sh).
 
 **imageGetter.sh**
 
