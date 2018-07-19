@@ -267,7 +267,7 @@ I want you to first try this on your own and view my solution only if you need h
 
 ### Script for downloading images from a Wikipedia or Wikimedia.
 
-You can alternatively download this script at [dougie.io/s/imageGetterWikipedia.sh](dougie.io/s/imageGetterWikipedia.sh).
+You can alternatively download this script at [dougie.io/s/imageGetterWikipedia.sh](/s/imageGetterWikipedia.sh).
 
 **How to run:**
 
