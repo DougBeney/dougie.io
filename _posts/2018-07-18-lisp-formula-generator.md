@@ -18,7 +18,65 @@ The following Lisp code will generate an Excel/Libreoffice compatable formula th
 
 [You can check out the formula that was generated here](/spreadsheet-formulas/domain-from-url/)
 
+### Attempt #2 (Latest)
+
 {% highlight common_lisp %}
+;;; title: Attempt #2
+;;;  date: 2018-07-23
+
+;;; Defining the variables
+(defvar cell 'A1)
+(defvar clean_url "")
+(defvar final_formula "")
+
+;;; THE THREE MOST IMPORTANT FUNCTIONS/MACROS IN THIS CODE
+;;  args takes a list and gives us a comma-separated string
+(defun args (&rest args)
+  (format nil "~{~a~^,~^ ~}" args))
+;;  f  stands for formula. It returns a typical formula
+(defmacro f (tag &rest inside)
+  `(format nil "~a(~a)" ,tag (args ,@inside)))
+;;  q stands for quote. It will surround a string in double-quotes
+(defun q (quote)
+  (format nil "\"~a\"" quote))
+
+;;; THESE FUNCTIONS GIVE US FORMULAS FOR CERTAINS TASKS
+;;  sub creates a SUBSTITUTE formula
+(defun sub (str find &optional (replace (q "")))
+  (f 'substitute (args str find replace)))
+;;  creates a FIND formula to find the first / in a string.
+;;  It optionally gives us a tail argument to stick on the end
+;;   of the string.
+(defun find_slash (loc &key (tail ""))
+  (format nil "~a~a"
+          (f 'find (q "/") loc)
+          tail))
+;; remove_after_slash is what turns our clean URL into a domain name
+(defun remove_after_slash (str)
+  (f 'left str (find_slash str :tail " - 1")))
+
+;;; THE MAIN CODE
+;; make clean_url not have www. or any http prefix
+(setq clean_url (sub (sub (sub cell (q "www.")) (q "http://")) (q "https://")))
+
+;; Create the formula
+(setq final_formula (f 'if
+                       (f 'isnumber (find_slash clean_url)) ;; if this condition
+                       (remove_after_slash clean_url)       ;; return this
+                       clean_url))                          ;; else return this
+
+;; Print the formula. We use princ so backslashes do not
+;  not get printed out.
+(princ final_formula)
+
+{% endhighlight %}
+
+### Attempt #1
+
+{% highlight common_lisp %}
+;;; title: Attempt #1
+;;;  date: 07-18-2018
+
 (defvar cell         "A1") ;; The cell with the URL in it.
 (defvar base_formula   "")
 (defvar the_condition  "")
