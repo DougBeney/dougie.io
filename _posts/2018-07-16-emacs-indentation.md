@@ -1,5 +1,5 @@
 ---
-title: The Ultimate Guide To Using Tabs For Indentation In Emacs
+title: The Ultimate Guide To Indentation in Emacs (Tabs and Spaces)
 date: 2018-07-16
 icon: pencil-square
 category: Coding
@@ -11,7 +11,9 @@ tags: [Coding, Emacs]
 
 ![Screenshot](/static/img/blog/tabs-in-emacs/screenshot.png)
 
-## TL;DR: The full configuration:
+## TL;DR: The Full Configuration:
+
+This configuration is meant for users that prefer tabs over spaces. To learn how to customize tabs and spaces behavior differently, please refer to the Breaking It Down section.
 
 {% highlight elisp %}
 ; START TABS CONFIG
@@ -52,13 +54,12 @@ tags: [Coding, Emacs]
 (setq whitespace-display-mappings
   '((tab-mark 9 [124 9] [92 9]))) ; 124 is the ascii ID for '\|'
 (global-whitespace-mode) ; Enable whitespace mode everywhere
-
 ; END TABS CONFIG
 {% endhighlight %}
 
 ## Breaking It Down
 
-### Creating Functions for Enabling/Disabling tabs
+### Functions for Enabling/Disabling tabs
 
 {% highlight elisp %}
 ;; Our Custom Variable
@@ -77,16 +78,26 @@ First thing we do in the `enable-tabs` function is set the TAB key to `tab-to-ta
 
 After that, we enable [indent-tabs-mode](https://www.gnu.org/software/emacs/manual/html_node/eintr/Indent-Tabs-Mode.html) and set our custom [tab-width](https://www.gnu.org/software/emacs/manual/html_node/efaq/Changing-the-length-of-a-Tab.html).
 
-### Using tabs for indentation and changing the indent size
+### Using Tabs or Spaces in Different Files
 
 {% highlight elisp %}
-;; Our Custom Variable
-(setq custom-tab-width 2)
-
 (add-hook 'prog-mode-hook 'enable-tabs)
 
 (add-hook 'lisp-mode-hook 'disable-tabs)
 (add-hook 'emacs-lisp-mode-hook 'disable-tabs)
+{% endhighlight %}
+
+After we create [those hooks](#functions-for-enablingdisabling-tabs), it is very easy to decide what types of files/modes we want to enable tabs/spaces in.
+
+In this example, we enable tabs in [prog-mode](https://www.emacswiki.org/emacs/ProgMode). Prog-mode is a nice hook to use if you want to make settings for pretty much all code filetypes.
+
+After that we disable tabs (use spaces) in Lisp and ELisp files. Lisp is a special type of programming language that really doesn't work well with tabs, so I HIGHLY recommend spaces. Why is that exactly? The concept of indentation really doesn't exist in Lisp. It's all about alignment, and tabs will screw up the precise alignment that Lisp requires.
+
+### Changing the tab width
+
+{% highlight elisp %}
+;; Our Custom Variable
+(setq custom-tab-width 2)
 
 (setq-default python-indent-offset custom-tab-width)
 (setq-default evil-shift-width custom-tab-width)
@@ -94,21 +105,13 @@ After that, we enable [indent-tabs-mode](https://www.gnu.org/software/emacs/manu
 
 Remember not to define the variable `custom-tab-width` twice! It should be defined above your enable/disable tabs functions. I included it in this code snippet just for illustration purposes.
 
-After we create [those hooks](#creating-functions-for-enablingdisabling-tabs), it is very easy to decide what types of files/modes we want to enable tabs/spaces in.
+In this example, we set the the tab width to our custom tab width variable. The first line uses the basic `tab-width` property. I recommend not setting the tab-width in the way I have described above and instead put it inside of a function, to be used in hooks. [Detail on doing just that](#functions-for-enablingdisabling-tabs).
 
-In this example, we enable tabs in [prog-mode](https://www.emacswiki.org/emacs/ProgMode). Prog-mode is a nice hook to use if you want to make settings for pretty much all code filetypes.
+Next, we set the Python indent size to our custom tab width variable. They make it 4 spaces by default to comply with [pep8](https://www.python.org/dev/peps/pep-0008/), but if you prefer to have your own default value, you can change it via that variable.
 
-After that we disable tabs (use spaces) in Lisp and ELisp files. Lisp is a special type of programming language that really doesn't work well with tabs, so I HIGHLY recommend spaces. Why is that exactly? The concept of indentation really doesn't exist in Lisp. It's all about alignment, and tabs will screw up the precise alignment that Lisp requires.
+Lastly, we set the evil-shift-width to our custom tab width variable. This is only useful if you are using the Evil package to get Vim-like keybindings instead of using glorious Emacs keybindings. `evil-shift-width` controls the tab size when you're using the `>>` or `<<` motion to indent or de-indent text.
 
-**Changing the tab width:**
-
-In this example, we set the the tab width to 2 spaces. The first line uses the basic `tab-width` property. I recommed not setting the tab-width in the way I have described above and instead put it inside of a function, to be used in hooks. [Detail on doing just that](#creating-functions-for-enablingdisabling-tabs).
-
-Next, we set the Python indent size to 2. They make it 4 spaces by default to comply with [pep8](https://www.python.org/dev/peps/pep-0008/), but if you prefer to have your own default value, you can change it via that variable.
-
-Lastly, we set the evil-shift-width to 2. This is only useful if you are using the Evil package to get Vim-like keybindings instead of using glorious Emacs keybindings. `evil-shift-width` controls the tab size when you're using the `>>` or `<<` motion to indent or de-indent text.
-
-### Highlight tabs
+### Highlighting Tabs and Spaces Differently
 
 Something that I feel that is very important to have in an editor is a way to identify spaces and tabs easily. They are both whitespace characters that can easily be confused for eachother.
 
@@ -140,7 +143,7 @@ The line that is a little bit confusing to read is the one where we actually set
 
 All you really need to know about it is that `124` is the ascii ID of the pipe character ("\|"). You can view [a list of ascii character IDs here](http://rmhh.co.uk/ascii.html).
 
-### Making Backspace properly delete tabs
+### Making Backspace Properly Delete Tabs
 
 Emacs has a strange default behavior when backspacing tabs. Instead of backspacing the whole tab, it backspaces the tab one space at a time.
 
