@@ -5,10 +5,11 @@ layout: base
 .container#post_container
 	h1.title.is-1#page_title {{page.title}}
 	| {% unless page.disable-data == true %}
-	//- TODO: Add date code here
+	//- Maybe put date stuff here
 	| {% endunless %}
+
 	.body {{content}}
-	
+
 	| {% unless page.disable-commenting == true %}
 	include ../_includes/comments
 	| {% endunless %}
