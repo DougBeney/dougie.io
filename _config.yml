@@ -4,6 +4,7 @@
 url: https://dougie.io
 destination: _site/dist
 exclude: [static/css/_lib, static/css/_parts]
+include: [_redirects]
 
 jekyll-bliss:
   build-folder: _site/build
