@@ -34,8 +34,11 @@ This configuration is meant for users that prefer tabs over spaces. To learn how
 (add-hook 'emacs-lisp-mode-hook 'disable-tabs)
 
 ;; Language-Specific Tweaks
-;;; Python
-(setq-default python-indent-offset custom-tab-width)
+(setq-default python-indent-offset custom-tab-width) ;; Python
+(setq-default js-indent-level custom-tab-width)      ;; Javascript
+
+;; Making electric-indent behave sanely
+(setq-default electric-indent-inhibit t)
 
 ;; Make the backspace properly erase the tab instead of
 ;; removing 1 space at a time.
@@ -110,6 +113,15 @@ In this example, we set the the tab width to our custom tab width variable. The 
 Next, we set the Python indent size to our custom tab width variable. They make it 4 spaces by default to comply with [pep8](https://www.python.org/dev/peps/pep-0008/), but if you prefer to have your own default value, you can change it via that variable.
 
 Lastly, we set the evil-shift-width to our custom tab width variable. This is only useful if you are using the Evil package to get Vim-like keybindings instead of using glorious Emacs keybindings. `evil-shift-width` controls the tab size when you're using the `>>` or `<<` motion to indent or de-indent text.
+
+### Making Indentation Behave Sanely (Electric Indent)
+
+Something that was driving me nuts was Emacs electric-indent indenting the previous line when I press enter. Luckily, I came across a fix one day.
+
+{% highlight elisp %}
+(setq-default electric-indent-inhibit t)
+{% endhighlight %}
+
 
 ### Highlighting Tabs and Spaces Differently
 
