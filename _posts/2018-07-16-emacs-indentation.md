@@ -2,7 +2,8 @@
 title: The Ultimate Guide To Indentation in Emacs (Tabs and Spaces)
 date: 2018-07-16
 icon: pencil-square
-category: Coding
+category: Emacs
+slug: indentation
 tags: [Coding, Emacs]
 ---
 
@@ -122,6 +123,9 @@ Something that was driving me nuts was Emacs electric-indent indenting the previ
 (setq-default electric-indent-inhibit t)
 {% endhighlight %}
 
+### Indent a selection left or right
+
+To accomplish this, refer to my [How to Indent a Selection in Emacs](/emacs/indent-selection) guide.
 
 ### Highlighting Tabs and Spaces Differently
 
