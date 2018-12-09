@@ -1,0 +1,26 @@
+---
+title: dougie.io - Coding & Business
+layout: base
+---
+
+nav
+  a#logo(href="/") dougie.io
+  ul
+    li: a.active(href="/") Articles
+    li: a(href="/") Notes
+    li: a(href="/projects") Projects
+    li: a(href="/contact") Contact
+
+.blog-roll.container
+  | {% for post in site.posts %}
+  a.post-snippet(href="#"): .columns.is-mobile
+    #icon-col.column.is
+      span(class="fa fa-{{post.icon}}")
+    #date-col.column.is-2
+      #day 20
+      #month September
+      #year 2018
+    #main-col.column
+      .title {{post.title}}
+      .excerpt {{post.excerpt}}
+  | {% endfor %}

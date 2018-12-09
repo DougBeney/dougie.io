@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Using Wget, Grep, and Sed to Download Public Domain Wallpapers From a Web Page
 date: 2018-06-02 09:43 -0400
 category: Linux
@@ -249,7 +248,7 @@ Now for the moment of truth! Let's run wget again.
 
 `wget -i urls-new.txt -P downloads/`
 
-### Success! 
+### Success!
 
 ![Success!](/static/img/blog/images-from-cli/my-desktop.png)
 

@@ -1,0 +1,42 @@
+nav
+  text-align: center
+  background: #080828
+  box-sizing: border-box
+  @media screen and (max-width: 400px)
+    font-size: .95em
+    ul
+      max-width: 300px
+      margin: 0 auto
+
+  #logo
+    display: block
+    font-family: 'Roboto', sans-serif
+    margin-top: 0
+    padding-top: 15px
+    margin-bottom: 0
+    color: #fff
+    font-weight: 900
+    border: 0
+    font-size: 1.9em
+    font-weight: 900
+    letter-spacing: 1px
+    &:hover
+      border: 0
+
+  li
+    display: inline-block
+
+    a
+      font-family: 'Roboto', sans-serif
+      color: #fff
+      display: inline-block
+      margin-bottom: 5px
+      padding: 15px 30px
+      border-bottom: 3px solid #612faa
+      transition: 100ms ease-in
+      font-weight: 900
+      letter-spacing: 1px
+      &:hover, &.active
+        color: #DA45A9
+        border-bottom-color: #DA45A9
+        text-decoration: none
