@@ -3,24 +3,30 @@ title: dougie.io - Coding & Business
 layout: base
 ---
 
-nav
-  a#logo(href="/") dougie.io
-  ul
-    li: a.active(href="/") Articles
-    li: a(href="/") Notes
-    li: a(href="/projects") Projects
-    li: a(href="/contact") Contact
-
 .blog-roll.container
-  | {% for post in site.posts %}
+  | {% for post in paginator.posts %}
   a.post-snippet(href="#"): .columns.is-mobile
     #icon-col.column.is
-      span(class="fa fa-{{post.icon}}")
+      .
+        {% if post.icon %}
+          {% assign icon_name = post.icon %}
+        {% else %}
+          {% assign icon_name = "newspaper-o" %}
+        {% endif %}
+      span(class="fa fa-{{icon_name}}")
     #date-col.column.is-2
-      #day 20
-      #month September
-      #year 2018
+      #day {{ post.date | date: "%e"}}
+      #month {{ post.date | date: "%B"}}
+      #year {{ post.date | date: "%Y"}}
     #main-col.column
-      .title {{post.title}}
+      .title.is-4 {{post.title}}
       .excerpt {{post.excerpt}}
   | {% endfor %}
+
+  nav.pagination(role='navigation', aria-label='pagination')
+    | {% if paginator.previous_page %}
+    a.pagination-previous(href="{{paginator.previous_page_path}}") Previous
+    | {% endif %}
+    | {% if paginator.next_page %}
+    a.pagination-next(href="{{paginator.next_page_path}}") Next page
+    | {% endif %}

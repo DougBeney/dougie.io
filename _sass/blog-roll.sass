@@ -3,10 +3,16 @@
   .post-snippet
     display: block
     color: #353752
+
     padding: 20px 15px !important
     border-bottom: 2px dotted #DDDDDD
 
+    &:hover
+      .title
+        text-decoration: underline
+
     .title
+      color: #080828
       margin-bottom: 10px
       @media screen and (max-width: 400px)
         font-size: 1.3em
@@ -17,7 +23,8 @@
       flex-direction: column
       justify-content: center
     #icon-col
-      font-size: 1.5em
+      color: #080828
+      font-size: 1.4em
       text-align: center
       max-width: 60px
       @media screen and (max-width: 600px)
@@ -27,7 +34,10 @@
       max-width: 100px
       min-width: 90px
       #day
-        font-size: 2em
+        font-size: 1.3em
       #year
         font-family: 'Roboto', sans-serif
         font-size: 0.8em
+  nav.pagination
+    justify-content: left !important
+    margin: 10px 0
