@@ -1,0 +1,17 @@
+---
+---
+
+[
+{% for post in site.posts %}
+{
+    "title": {{post.title | jsonify}},
+    "date": {{post.date | date: "%F" | jsonify}},
+    "url": {{post.url | jsonify}},
+    "excerpt": {{post.excerpt | jsonify}},
+    "category": {{post.category | jsonify}},
+    "tags": {{post.tags | jsonify}},
+    "icon": {% if post.icon %}{{post.icon | jsonify}}{% else %}"newspaper-o"{% endif %},
+    "content": {{post.content | jsonify}}
+}{%unless forloop.index == site.posts.size %},{% endunless %}
+{% endfor %}
+]

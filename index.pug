@@ -4,29 +4,45 @@ layout: base
 ---
 
 .blog-roll.container
-  | {% for post in paginator.posts %}
-  a.post-snippet(href="#"): .columns.is-mobile
-    #icon-col.column.is
-      .
-        {% if post.icon %}
-          {% assign icon_name = post.icon %}
-        {% else %}
-          {% assign icon_name = "newspaper-o" %}
-        {% endif %}
-      span(class="fa fa-{{icon_name}}")
-    #date-col.column.is-2
-      #day {{ post.date | date: "%e"}}
-      #month {{ post.date | date: "%B"}}
-      #year {{ post.date | date: "%Y"}}
-    #main-col.column
-      .title.is-4 {{post.title}}
-      .excerpt {{post.excerpt}}
-  | {% endfor %}
+  .tabs.js: ul
+    li.is-active: a Featured
+    li: a All
+    li: a Emacs
+    li: a Questions
+    li: a Linux
+  .snippets
+    | {% for post in paginator.posts %}
+    a.post-snippet(href="#"): .columns.is-mobile
+      #icon-col.column
+        .
+          {% if post.icon %}
+            {% assign icon_name = post.icon %}
+          {% else %}
+            {% assign icon_name = "newspaper-o" %}
+          {% endif %}
+        span(class="fa fa-{{icon_name}}")
+      #date-col.column.is-2
+        #day {{ post.date | date: "%e"}}
+        #month {{ post.date | date: "%B"}}
+        #year {{ post.date | date: "%Y"}}
+      #main-col.column
+        .title.is-4 {{post.title}}
+        .excerpt {{post.excerpt}}
+    | {% endfor %}
 
-  nav.pagination(role='navigation', aria-label='pagination')
+  // Storing variables that will be accessed through javascript
+  posts-per-page {{paginator.per_page}}
+  posts-showing {{paginator.page | times: paginator.per_page}}
+
+  //- Pagination for those without javascript
+  nav.pagination.no-js(role='navigation', aria-label='pagination')
     | {% if paginator.previous_page %}
     a.pagination-previous(href="{{paginator.previous_page_path}}") Previous
     | {% endif %}
     | {% if paginator.next_page %}
     a.pagination-next(href="{{paginator.next_page_path}}") Next page
     | {% endif %}
+
+  //- Pagination for those with javascript
+  nav.pagination.js(role='navigation', aria-label='pagination')
+    a.button#pagination-more-button More

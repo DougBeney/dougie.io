@@ -1,0 +1,8 @@
+---
+---
+
+[
+    {% for category in site.categories %}
+    {{category | first | strip_html | jsonify}}{% unless forloop.index == site.categories.size %},{% endunless %}
+    {% endfor %}
+]

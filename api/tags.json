@@ -1,0 +1,8 @@
+---
+---
+
+[
+    {% for tag in site.tags %}
+    {{tag | first | strip_html | jsonify}}{% unless forloop.index == site.tags.size %},{% endunless %}
+    {% endfor %}
+]
