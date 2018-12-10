@@ -8,7 +8,7 @@ layout: base
     li.item#All.is-active: a All
   .snippets#all-posts
     | {% for post in paginator.posts %}
-    a.post-snippet(href="#"): .columns.is-mobile
+    a.post-snippet(href="{{post.url}}"): .columns.is-mobile
       #icon-col.column
         .
           {% if post.icon %}

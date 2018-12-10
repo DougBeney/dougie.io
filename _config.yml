@@ -1,6 +1,19 @@
+url: https://dougie.io
+
 paginate: 20
 paginate_path: /:num/
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /:categories/:title/
+
+
+include: [_redirects] # For Neflify
 sass:
   sass_dir: _sass/
 

@@ -13,7 +13,7 @@ function createPostSnippet(post, container=".snippets#all-posts") {
 
     var snippet = $('<a>', {
         class: "post-snippet",
-        href: "/hello"
+        href: post.url
     });
     var columns = $('<div>', {
         class: "columns is-mobile"

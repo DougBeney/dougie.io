@@ -1,0 +1,10 @@
+---
+layout: base
+---
+
+.container#post-container
+  h1.title.is-1 {{page.title}}
+  #post-meta
+    #date {{page.date | date: "%A - %B %e, %Y"}}
+  | {{content}}
+  | {% include comments.html %}
