@@ -5,8 +5,8 @@ layout: base
 
 .blog-roll.container
   .tabs.js: ul
-    li.item.is-active: a All
-  .snippets
+    li.item#All.is-active: a All
+  .snippets#all-posts
     | {% for post in paginator.posts %}
     a.post-snippet(href="#"): .columns.is-mobile
       #icon-col.column
@@ -25,6 +25,8 @@ layout: base
         .title.is-4 {{post.title}}
         .excerpt {{post.excerpt}}
     | {% endfor %}
+  .snippets#categorized
+    //- This will display categorized posts
 
   // Storing variables that will be accessed through javascript
   posts-per-page {{paginator.per_page}}

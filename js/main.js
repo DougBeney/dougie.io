@@ -1,6 +1,14 @@
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-function createPostSnippet(post) {
+var showingFilteredView = false;
+var posts = [];
+var categories = [];
+var currentCategory;
+var totalPosts = -1;
+var totalCatPosts = 0;
+var perPage, All_postsShowing, Cat_postsShowing;
+
+function createPostSnippet(post, container=".snippets#all-posts") {
     var date = new Date(post.date)
 
     var snippet = $('<a>', {
@@ -45,7 +53,7 @@ function createPostSnippet(post) {
 
     snippet.append(columns)
     columns.append(icon_column, date_column, main_column)
-    $('.snippets').append(snippet)
+    $(container).append(snippet)
 }
 
 function addCategory(name) {
@@ -64,39 +72,110 @@ $(function() {
     $('.no-js').hide();
 
     var posts = []
-    var totalPosts = -1;
-    var perPage = parseInt($('posts-per-page').text());
-    var postsShowing = parseInt($('posts-showing').text());
-
-    var categories = []
+    perPage = parseInt($('posts-per-page').text());
+    All_postsShowing = parseInt($('posts-showing').text());
 
     $.getJSON("/api/posts.json", function(data) {
         posts = data;
         totalPosts = data.length;
-        if (postsShowing >= totalPosts)
+        if (All_postsShowing >= totalPosts)
             $('#pagination-more-button').hide()
+        else
+            $('#pagination-more-button').show()
     })
 
     $.getJSON("/api/categories.json", function(data) {
         categories = data
         for (category of categories)
             addCategory(category)
+
+        // A category tab is clicked
         $('.blog-roll .tabs .item').click(function() {
+            // Exit if user clicked on the active item.
+            if ( $(this).text() == $('.blog-roll .tabs .is-active').text() )
+                return;
+
             $('.blog-roll .tabs .item').removeClass('is-active')
             $(this).addClass('is-active');
+
+            var allPostsList = $(".snippets#all-posts");
+            var catPostsList = $(".snippets#categorized");
+
+            if ( $(this).attr('id') == 'All' ) {
+                showingFilteredView = false;
+                allPostsList.show();
+                catPostsList.hide();
+                if (All_postsShowing >= totalPosts)
+                    $('#pagination-more-button').hide()
+                else
+                    $('#pagination-more-button').show()
+            } else {
+                showingFilteredView = true;
+                allPostsList.hide();
+                catPostsList.show();
+
+                // Clear
+                catPostsList.html('');
+                totalCatPosts = 0;
+                Cat_postsShowing = 0;
+
+                currentCategory = $(this).text();
+                for ( post of posts ) {
+                    if ( post.category.includes(currentCategory) ) {
+                        if ( Cat_postsShowing < perPage ) {
+                            createPostSnippet(post, ".snippets#categorized");
+                            Cat_postsShowing++;
+                        }
+                        totalCatPosts++;
+                    }
+                }
+                if (Cat_postsShowing == 0)
+                    catPostsList.html('<p>No posts matched that criteria.</p>');
+                if (Cat_postsShowing >= totalCatPosts)
+                    $('#pagination-more-button').hide()
+                else
+                    $('#pagination-more-button').show()
+            }
+
         });
     })
 
     $('#pagination-more-button').click(function() {
-        if ( totalPosts == -1 || postsShowing == totalPosts )
-            return;
-        var loopMax = postsShowing+perPage < posts.length ? postsShowing+perPage : posts.length;
+        if ( showingFilteredView) {
+            if ( totalCatPosts == 0 || Cat_postsShowing == totalCatPosts )
+                return;
+            var pagesAdded = 0;
+            var postsMatched;
+            var currentPostsShowing = Cat_postsShowing
 
-        for ( i=postsShowing; i < loopMax; i++)
-            createPostSnippet( posts[i] )
+            for ( post of posts ) {
+                if ( post.category.includes( currentCategory ) ) {
+                    pagesAdded++;
+                    if ( pagesAdded > Cat_postsShowing &&
+                         Cat_postsShowing-currentPostsShowing < perPage) {
+                        createPostSnippet(post, ".snippets#categorized");
+                        Cat_postsShowing++;
+                    }
+                }
+            }
 
-        postsShowing = loopMax
-        if (postsShowing >= totalPosts)
-            $('#pagination-more-button').hide()
+            if (Cat_postsShowing >= totalCatPosts)
+                $('#pagination-more-button').hide()
+            else
+                $('#pagination-more-button').show()
+        } else {
+            if ( totalPosts == -1 || All_postsShowing == totalPosts )
+                return;
+            var loopMax = All_postsShowing+perPage < posts.length ? All_postsShowing+perPage : posts.length;
+
+            for ( i=All_postsShowing; i < loopMax; i++)
+                createPostSnippet( posts[i] )
+
+            All_postsShowing = loopMax
+            if (All_postsShowing >= totalPosts)
+                $('#pagination-more-button').hide()
+            else
+                $('#pagination-more-button').show()
+        }
     });
 })
