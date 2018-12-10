@@ -58,12 +58,11 @@ $(function() {
     var perPage = parseInt($('posts-per-page').text());
     var postsShowing = parseInt($('posts-showing').text());
 
-    if (postsShowing == totalPosts)
-        $('#pagination-more-button').hide()
-
     $.getJSON("/api/posts.json", function(data) {
         posts = data;
         totalPosts = data.length;
+        if (postsShowing >= totalPosts)
+            $('#pagination-more-button').hide()
     })
 
     $('#pagination-more-button').click(function() {
@@ -75,7 +74,7 @@ $(function() {
             createPostSnippet( posts[i] )
 
         postsShowing = loopMax
-        if (postsShowing == totalPosts)
+        if (postsShowing >= totalPosts)
             $('#pagination-more-button').hide()
     });
 })
