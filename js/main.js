@@ -48,6 +48,16 @@ function createPostSnippet(post) {
     $('.snippets').append(snippet)
 }
 
+function addCategory(name) {
+    var category = $('<li>', {
+        class: "item",
+        html: $("<a>", {
+            html: name
+        })
+    })
+    $(".blog-roll .tabs ul").append(category)
+}
+
 $(function() {
     // Hide non-js user elements. Show js user elements
     $('.js').show();
@@ -58,11 +68,23 @@ $(function() {
     var perPage = parseInt($('posts-per-page').text());
     var postsShowing = parseInt($('posts-showing').text());
 
+    var categories = []
+
     $.getJSON("/api/posts.json", function(data) {
         posts = data;
         totalPosts = data.length;
         if (postsShowing >= totalPosts)
             $('#pagination-more-button').hide()
+    })
+
+    $.getJSON("/api/categories.json", function(data) {
+        categories = data
+        for (category of categories)
+            addCategory(category)
+        $('.blog-roll .tabs .item').click(function() {
+            $('.blog-roll .tabs .item').removeClass('is-active')
+            $(this).addClass('is-active');
+        });
     })
 
     $('#pagination-more-button').click(function() {

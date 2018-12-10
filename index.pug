@@ -5,11 +5,7 @@ layout: base
 
 .blog-roll.container
   .tabs.js: ul
-    li.is-active: a Featured
-    li: a All
-    li: a Emacs
-    li: a Questions
-    li: a Linux
+    li.item.is-active: a All
   .snippets
     | {% for post in paginator.posts %}
     a.post-snippet(href="#"): .columns.is-mobile
