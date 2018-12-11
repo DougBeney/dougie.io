@@ -72,10 +72,23 @@ $(function() {
     $('.no-js').hide();
 
     var posts = []
+    postType =$('posts-type').text();
     perPage = parseInt($('posts-per-page').text());
     All_postsShowing = parseInt($('posts-showing').text());
 
-    $.getJSON("/api/posts.json", function(data) {
+    var apiEndpoint_posts;
+    var apiEndpoint_cats;
+
+    if ( postType == 'blog' ) {
+        apiEndpoint_posts = '/api/posts.json';
+        apiEndpoint_cats = '/api/categories.json';
+    }
+    else if ( postType == 'notes' ) {
+        apiEndpoint_posts = '/api/notes.json';
+        apiEndpoint_cats = '/api/note_categories.json';
+    }
+
+    $.getJSON(apiEndpoint_posts, function(data) {
         posts = data;
         totalPosts = data.length;
         if (All_postsShowing >= totalPosts)
@@ -84,7 +97,7 @@ $(function() {
             $('#pagination-more-button').show()
     })
 
-    $.getJSON("/api/categories.json", function(data) {
+    $.getJSON(apiEndpoint_cats, function(data) {
         categories = data
         for (category of categories)
             addCategory(category)
@@ -100,11 +113,14 @@ $(function() {
 
             var allPostsList = $(".snippets#all-posts");
             var catPostsList = $(".snippets#categorized");
+            var searchPostsList = $(".snippets#search-results");
 
             if ( $(this).attr('id') == 'All' ) {
                 showingFilteredView = false;
                 allPostsList.show();
                 catPostsList.hide();
+                searchPostsList.hide();
+
                 if (All_postsShowing >= totalPosts)
                     $('#pagination-more-button').hide()
                 else
@@ -113,6 +129,7 @@ $(function() {
                 showingFilteredView = true;
                 allPostsList.hide();
                 catPostsList.show();
+                searchPostsList.hide();
 
                 // Clear
                 catPostsList.html('');
@@ -121,12 +138,15 @@ $(function() {
 
                 currentCategory = $(this).text();
                 for ( post of posts ) {
+                    console.log("Looping", perPage)
                     if ( post.category.includes(currentCategory) ) {
                         if ( Cat_postsShowing < perPage ) {
                             createPostSnippet(post, ".snippets#categorized");
                             Cat_postsShowing++;
                         }
                         totalCatPosts++;
+                    } else {
+                        console.log(post.category, currentCategory);
                     }
                 }
                 if (Cat_postsShowing == 0)
@@ -178,4 +198,42 @@ $(function() {
                 $('#pagination-more-button').show()
         }
     });
+
+    // Search blog posts
+    $('#search').on('keyup', function() {
+        var query = $(this).val();
+        if ( query.trim() == "" )
+            return;
+
+        var allPostsList = $(".snippets#all-posts");
+        var catPostsList = $(".snippets#categorized");
+        var searchPostsList = $(".snippets#search-results");
+
+        allPostsList.hide();
+        catPostsList.hide();
+        searchPostsList.show();
+
+        $(searchPostsList).html('<h1 class="title is-2">Search results for "'+query+'"</h1>');
+
+        var options = {
+            shouldSort: true,
+            threshold: 0.6,
+            location: 0,
+            distance: 100,
+            maxPatternLength: 32,
+            minMatchCharLength: 1,
+            keys: [
+                "title"
+            ]
+        };
+        var fuse = new Fuse(posts, options); // "list" is the item array
+        var result = fuse.search(query);
+
+        for (post of result) {
+            createPostSnippet(post, ".snippets#search-results");
+        }
+
+        if ( result.length == 0 )
+            searchPostsList.append($("<p>", {html: "No results found. :("}));
+    })
 })

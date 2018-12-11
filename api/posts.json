@@ -2,10 +2,10 @@
 ---
 
 [
-{% for post in site.posts %}
+{% for post in site.posts %}{% unless post.draft %}
 {
     "title": {{post.title | jsonify}},
-    "date": {{post.date | date: "%F" | jsonify}},
+    "date": {{post.date | date: "%FT%R-05:00" | jsonify}},
     "url": {{post.url | jsonify}},
     "excerpt": {{post.excerpt | jsonify}},
     "category": {{post.category | jsonify}},
@@ -13,5 +13,5 @@
     "icon": {% if post.icon %}{{post.icon | jsonify}}{% else %}"newspaper-o"{% endif %},
     "content": {{post.content | jsonify}}
 }{%unless forloop.index == site.posts.size %},{% endunless %}
-{% endfor %}
+{% endunless %}{% endfor %}
 ]

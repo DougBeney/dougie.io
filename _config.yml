@@ -11,6 +11,17 @@ defaults:
     values:
       layout: "post"
       permalink: /:categories/:title/
+  -
+    scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "post"
+
+collections:
+  notes:
+    output: true
+    permalink: /note/:categories/:title
 
 
 include: [_redirects] # For Neflify

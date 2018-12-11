@@ -1,7 +1,7 @@
 #post-container
   margin: 40px auto
   max-width: 800px
-  color: #423C3C
+  color: #1D1C1C
 
   #post-meta
     text-align: left
@@ -46,8 +46,35 @@
     font-family: 'Roboto Mono', monospace
     font-size: 1.1em
 
+  pre
+    padding: 0 15px
+
   figure
     display: inline-block
     width: 100%
     &> pre
+      margin: 0
+
+  img
+    max-width: 100%
+    height: auto
+
+  a
+    color: #612FAA
+    font-weight: bold
+    border-bottom: 1px dotted
+    &:hover
+      border-bottom-style: solid
+
+  ul
+    list-style: disc
+    li:before
+      color: blue
+  ul, ol
+    margin-left: 15px
+    ul
+      margin: 0
+    li
+      margin-left: 1em
+    p
       margin: 0
