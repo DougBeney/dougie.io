@@ -10,7 +10,7 @@ layout: base
         li.item#All.is-active: a All
     .column.is-3
       div(class="control")
-        input#search.input(type='text', placeholder='Find a blog post.')
+        input#search.input(type='text', placeholder='Find a note.')
 
   .snippets#all-posts
     | {% for note in site.notes limit: 20 %}

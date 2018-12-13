@@ -1,5 +1,15 @@
 .blog-roll
   margin: 20px auto
+  padding: 0 15px
+  @media screen and (max-width: 750px)
+    #tab-columns .tabs
+      overflow-x: scroll
+      a
+        padding: 20px 15px
+        min-width: 50px
+
+  .input:-moz-placeholder, .input::placeholder, .select select::placeholder, .textarea:-moz-placeholder, .textarea::placeholder
+    color: rgba(54, 54, 54, 0.75)
   #tab-columns
     input::placeholder
       opacity: 1
@@ -56,3 +66,7 @@
     margin: 10px 0
     #pagination-more
       font-size: 1.2em
+
+  #search-results h1
+    text-align: center
+    font-size: 1.5em

@@ -22,6 +22,9 @@ collections:
   notes:
     output: true
     permalink: /note/:categories/:title
+  snippets:
+    permalink: /s/:path
+    output: true
 
 
 include: [_redirects] # For Neflify

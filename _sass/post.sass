@@ -1,5 +1,6 @@
 #post-container
   margin: 40px auto
+  padding: 0 15px
   max-width: 800px
   color: #1D1C1C
 
@@ -35,7 +36,7 @@
   h2
     font-weight: bolder
   h1
-    line-height: 1.4
+    line-height: 1.2
     margin-bottom: 30px
 
   p, a, li, blockquote
@@ -47,7 +48,9 @@
     font-size: 1.1em
 
   pre
-    padding: 0 15px
+    padding: 15px
+    &.highlight
+      margin: 0
 
   figure
     display: inline-block
@@ -78,3 +81,44 @@
       margin-left: 1em
     p
       margin: 0
+
+  // START - Responsive Code
+  @media screen and (max-width: 750px)
+    margin-top: 0
+
+    $h1: 2em
+    $h2: 1.5em
+    $h3: 1.3em
+    $h4: 1em
+    $h5: 0.9em
+    $h6: 0.8em
+
+    $headings: ( h1: $h1, h2: $h2, h3: $h3, h4: $h4, h5: $h5, h6: $h6 )
+    @each $heading, $size in $headings
+      #{$heading}
+        color: #080828
+        margin-top: 30px
+        line-height: 1.8
+        font-size: $size
+        font-family: 'Roboto', sans-serif
+
+    h1
+      font-size: 2.5em
+      line-height: 1
+      margin-bottom: 20px
+
+    p, a, li, blockquote
+      line-height: 2
+      font-size: 15px
+
+    #post-meta
+      text-align: center
+      margin: 10px
+      #date
+        font-size: 0.9em
+        letter-spacing: 2px
+
+    code, pre, code *, pre *
+      font-family: 'Roboto Mono', monospace
+      font-size: 1em
+  // END - Responsive Code

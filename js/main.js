@@ -202,8 +202,13 @@ $(function() {
     // Search blog posts
     $('#search').on('keyup', function() {
         var query = $(this).val();
-        if ( query.trim() == "" )
+        if ( query.trim() == "" ) {
+            console.log("Clicking");
+            $('.blog-roll .tabs .item#All').click();
             return;
+        }
+
+        $('.blog-roll .tabs .item').removeClass('is-active')
 
         var allPostsList = $(".snippets#all-posts");
         var catPostsList = $(".snippets#categorized");
