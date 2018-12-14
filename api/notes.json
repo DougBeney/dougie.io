@@ -7,6 +7,7 @@ type: api
 {% for note in sorted %}{% unless note.draft %}
 {
     "title": {{note.title | jsonify}},
+    "author": {{note.author | jsonify}},
     "date": {{note.date | date: "%FT%R-05:00" | jsonify}},
     "url": {{note.url | jsonify}},
     "excerpt": {{ note.content | strip_html | truncatewords:25 | jsonify }},

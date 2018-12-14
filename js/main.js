@@ -95,6 +95,20 @@ $(function() {
             $('#pagination-more-button').hide()
         else
             $('#pagination-more-button').show()
+
+        // Printing to console for fun:
+        var type = 'posts';
+        if ( apiEndpoint_posts == '/api/notes.json' )
+            type = 'notes';
+        console.log("Here are the latest", type+":");
+        for ( i=0; i<posts.length; i++ ) {
+            if ( i >= 5 )
+                break;
+            console.log(
+                (i+1).toString()+".)", // 1.)
+                "'"+posts[i].title+"'\n\thttps://dougie.io"+posts[i].url // 'TITLE'\n\thttps://dougie.io/mypost
+            );
+        }
     })
 
     $.getJSON(apiEndpoint_cats, function(data) {
@@ -138,15 +152,12 @@ $(function() {
 
                 currentCategory = $(this).text();
                 for ( post of posts ) {
-                    console.log("Looping", perPage)
                     if ( post.category.includes(currentCategory) ) {
                         if ( Cat_postsShowing < perPage ) {
                             createPostSnippet(post, ".snippets#categorized");
                             Cat_postsShowing++;
                         }
                         totalCatPosts++;
-                    } else {
-                        console.log(post.category, currentCategory);
                     }
                 }
                 if (Cat_postsShowing == 0)
@@ -203,7 +214,6 @@ $(function() {
     $('#search').on('keyup', function() {
         var query = $(this).val();
         if ( query.trim() == "" ) {
-            console.log("Clicking");
             $('.blog-roll .tabs .item#All').click();
             return;
         }
@@ -228,7 +238,9 @@ $(function() {
             maxPatternLength: 32,
             minMatchCharLength: 1,
             keys: [
-                "title"
+                "title",
+                "content",
+                "author"
             ]
         };
         var fuse = new Fuse(posts, options); // "list" is the item array
