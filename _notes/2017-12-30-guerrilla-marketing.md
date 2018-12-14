@@ -102,8 +102,6 @@ Example: An imaginary company called "Freedom Press" that sells freelancing book
 
 The next paragraph could go into the specifics of how to accompish the above.
 
-###
-
 "People forget quickly. Each and every day Americans are bombarded with approximately 4,700 advertisements and marketing messages."
 
 In a study a commercial was shown once a week for 13 weeks. After 13 weeks 63% of people remembered it. A month later 32 percent remembered it. Two weeks after that, 21 percent remembered it. This means 79% of people forgot about it.
