@@ -3,7 +3,7 @@ title: Guerilla Marketing
 author: Jay Conrad Levinson
 date: 2017-12-30
 date_started: 2017-12-30
-date_finnished: 2018-01-15
+date_finished: 2018-01-15
 category: Book-Notes
 icon: book
 ---
@@ -16,7 +16,7 @@ icon: book
 
 ## Notes
 
-The most important thing about marketing is your commitment to a single, sensable marketing plan. While you shouldn't settle for mediocrity, it is worth knowing that staying commited to a mediocre marketing plan is better than not being commited and following an excellent marketing plan. #
+The most important thing about marketing is your commitment to a single, sensable marketing plan. While you shouldn't settle for mediocrity, it is worth knowing that staying committed to a mediocre marketing plan is better than not being committed and following an excellent marketing plan. #
 
 It takes a buyer many times of exposure to your brand before they are ready to buy.
 
@@ -26,9 +26,9 @@ Marketing is not an overnight double-your-sales kind of investment. Could it hap
 
 Keep your marketing consistent. Don't change media. Don't change messages. Don't vary your graphic format. Change your offers and headlines and even your prices, if you wish, but do not change your identity.
 
-DON'T drop out of the public eye for long periods. Be prepared to put out the word consistantly - regularly.
+DON'T drop out of the public eye for long periods. Be prepared to put out the word consistently - regularly.
 
-Instead of running a large newpaper ad once and a while, run many small ones freqeuently.
+Instead of running a large newspaper ad once and a while, run many small ones frequently.
 
 ### Subsequent
 
@@ -56,14 +56,14 @@ The best marketing simply attempts to gain your consent to hear from you rather 
 - Your finances: Some wise investment in marketing
 - Your Energy: apparent prior to and subsequent to the sale
 - Your operation: convenient for customers
-- Your creative message: one htat leaves rewaders in amazement
+- Your creative message: one that leaves rewards in amazement
 - Your unglamourous but extremely profitable chore: measurement of who your customers are and where the heck they heard of you
 - Your relationship with customers: one of involvement with them
 - Your relationship with other businesses: dependent on one another for mutual profitability
-- your arsenal for marketing: brimming wityh the armament of guerrillas--easy-to-your technology
+- your arsenal for marketing: brimming with the armament of guerrillas--easy-to-your technology
 - The goal of your marketing: to gain consent from prospects and customers to receive more marketing materials from you.o
 - The reason people continue to visit your website or shop at your store: lush content, loaded with good ideas that fire their imagination
-- Your constant and never-ending task: to augment your marketing arsenal, undertanding and prowess, leaving your competitotrs shuddering at the very mention of your name
+- Your constant and never-ending task: to augment your marketing arsenal, understanding and prowess, leaving your competitors shuddering at the very mention of your name
 
 Bonus: The seventeenth secret: IMPLEMENT THESE SECRETS!
 
@@ -80,15 +80,15 @@ Once you clearly focused on your market (or markets) you can clarify on your mar
 
 ### Writing a marketing plan
 
-> "No guerilla would think of doing a speck of marketing without a proper marketing plan that includes a positioning statement."
+> "No guerrilla would think of doing a speck of marketing without a proper marketing plan that includes a positioning statement."
 
 "The plan starts with the purpose of marketing--that is, it starts with the bottom line. Then it connects with the benefits that will beautify that bottom line and with those who will contribute to that line--the target audience. The marketing tools are then listed. Next comes the positioning statement, which explains what the product and company stand for--why the offering has value and why it should be purchased. The identity (Not the image, which is phony compared with the honesty of an identity) comes next. The cost of the marketing wraps it up"
 
-**Seven-Sentence Guerilla Marketing Strategy**
+**Seven-Sentence Guerrilla Marketing Strategy**
 
 The sentences:
 
-1. The purpose of the marketing - What you want your prospect to actuall do (ex. Calling your phone number, signing up to your email list)
+1. The purpose of the marketing - What you want your prospect to actual do (ex. Calling your phone number, signing up to your email list)
 2. How you'll achieve this purpose (Include your competitive advantage and benefits)
 3. Your Target market
 4. The marketing weapons you'll use
@@ -100,7 +100,7 @@ Example: An imaginary company called "Freedom Press" that sells freelancing book
 
 > "The purpose of Freedom Press marketing is to motivate people to order the book online or by mail so as to sell the maximum number of books at the lowest possible selling cost per book. This will be accomplished by positioning the books as being so valuable to freelancers that they are guaranteed to be worth more to the reader than their selling price. The target market will be people who are or plan to be engaged in freelance earning activities."
 
-The next paragraph could go into the specifics of how to accompish the above.
+The next paragraph could go into the specifics of how to accomplish the above.
 
 "People forget quickly. Each and every day Americans are bombarded with approximately 4,700 advertisements and marketing messages."
 
@@ -108,7 +108,7 @@ In a study a commercial was shown once a week for 13 weeks. After 13 weeks 63% o
 
 "If you don't make people aware that you are selling something, they'll spend their money elsewhere."
 
-"If you halt your marketing program, you shortchange your reputaiton"
+"If you halt your marketing program, you shortchange your reputation"
 
 ### Marketing weapons
 
@@ -126,7 +126,7 @@ Can get cheap advertising by purchasing discounted unfilled ad space in magazine
 
 Establishing yourself as an ad agency can save you 15% off of most advertising.
 
-Market to primarily customers, not prospects. It costs one-sixth as musch to sell somehting to a customer than to a prospect.
+Market to primarily customers, not prospects. It costs one-sixth as much to sell something to a customer than to a prospect.
 
 ### Research
 
@@ -143,13 +143,13 @@ I suggest that, whether you are male or female, you wear a dark business suit. T
 Hardly anyone buys features, but most of us buy benefits to ourselves
 
 
-## Guerilla Company Attributes
+## Guerrilla Company Attributes
 
 ### Company Name
 
 Your company name should stand out from the crowd. If it doesn't, it is forgettable.
 
-> Greate names are like tiny poems; each letter, word unit, and sound should work with the others to deliver strategic messages.
+> Great names are like tiny poems; each letter, word unit, and sound should work with the others to deliver strategic messages.
 
 The name could describe or suggest a feature/benefit.
 
@@ -157,11 +157,11 @@ Bad names are hard to pronounce, difficult to spell, and aren't memorable.
 
 ### A "Meme"
 
-Not an internet meme. The term meme was coined in 1976 and essentially means a simple image that expresses an idea univerally.
+Not an internet meme. The term meme was coined in 1976 and essentially means a simple image that expresses an idea universally.
 
 An example of a meme in use is a cave drawing of a man spearing a fish. There is a caveman that spends all day trying to fish with his hands with zero luck. Then he spots the cave drawing and is able to feed himself.
 
-Examples of memes in the modern world include the eagle in America which stands for freedon, flashing headlights sign telling you to slow down, those turtle street signs which tell people to slow down.
+Examples of memes in the modern world include the eagle in America which stands for freedom, flashing headlights sign telling you to slow down, those turtle street signs which tell people to slow down.
 
 In business,, memes can be the Pillsbury doughboy, the energizer bunny, or Aunt Jemima.
 
@@ -174,10 +174,10 @@ Doesn't cost you a penny to create a winning, lasting, and memorable theme line.
 
 > "You're in good hands with Allstate"
 
-Your theme line sohuld be created to last a century or more.
+Your theme line should be created to last a century or more.
 
 Use your theme line EVERYWHERE. Email signature, website, business cards, etc
 
 Rhymes help memorability
 
-Ideally theme lines should only be a few words. The best theme lines say something good but don't use superaltives.
+Ideally theme lines should only be a few words. The best theme lines say something good but don't use superlatives.

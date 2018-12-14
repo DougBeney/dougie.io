@@ -3,7 +3,7 @@ title: Power of Habit
 author: Charles Duhigg
 date: 2018-01-01
 date_started: 2018-01-01
-date_finnished: 2018-01-29
+date_finished: 2018-01-29
 category: Book-Notes
 icon: book
 ---
@@ -13,13 +13,13 @@ icon: book
 
 You can replace a bad habit with a positive one.
 
-Small decisions over time build up intoo who you are.
+Small decisions over time build up into who you are.
 
 40% of the actions people do a day are habit rather than unique decisions.
 
-Monkey experimenr: when certain shape on screen monkey pulls lever and gets juice. When they don't get the juice they get antsy and frustrated
+Monkey experiment: when certain shape on screen monkey pulls lever and gets juice. When they don't get the juice they get antsy and frustrated
 
-YPeople that keep habits have a reward of achievwment
+People that keep habits have a reward of achievement
 
 Example: if you want to run, set a cue such as lacing up running shoes at breakfast or leave workout clothes by bed before you sleep. Set a clear goal such as recording your miles, a treat or the rush  you get
 
@@ -52,7 +52,7 @@ If you change a keystone habit, this can leave to positivity in other areas.
 Paul never promised that increasing safety would increase profits, but it did. Costs came down, profits went up, and productivity skyrocketed.
 
 **Keystone habit**:
-Excersize is a keystone habit that helps you in other areas of life.
+Exercise is a keystone habit that helps you in other areas of life.
 
 If you focus on cultivating or changing keystone habits, you can make major shifts in all areas of your life.
 
@@ -110,7 +110,7 @@ After hip surgery, patients were given special notebooks to write down their goa
 
 It was shown that those who wrote down their goals in their notebook recovered much faster.
 
-The most succeful patients' plans were very specific - detailing minute-by-minute pains they would encounter and how they would get past them.
+The most successful patients' plans were very specific - detailing minute-by-minute pains they would encounter and how they would get past them.
 
 > "The patient crafted self discipline into a habit"
 
@@ -128,4 +128,4 @@ Listen to the customer
 - acknowledge customer
 - take action
 - thank them
-- explain why problem occured
+- explain why problem occurred
