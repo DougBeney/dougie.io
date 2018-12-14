@@ -8,7 +8,7 @@ type: api
     "title": {{post.title | jsonify}},
     "date": {{post.date | date: "%FT%R-05:00" | jsonify}},
     "url": {{post.url | jsonify}},
-    "excerpt": {{post.excerpt | jsonify}},
+    "excerpt": {{ post.content | strip_html | truncatewords:25 | jsonify }},
     "category": {{post.category | jsonify}},
     "tags": {{post.tags | jsonify}},
     "icon": {% if post.icon %}{{post.icon | jsonify}}{% else %}"newspaper-o"{% endif %},

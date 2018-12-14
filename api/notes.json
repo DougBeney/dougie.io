@@ -3,12 +3,13 @@ type: api
 ---
 
 [
-{% for note in site.notes %}{% unless note.draft %}
+{% assign sorted = (site.notes | sort: 'date') | reverse %}
+{% for note in sorted %}{% unless note.draft %}
 {
     "title": {{note.title | jsonify}},
     "date": {{note.date | date: "%FT%R-05:00" | jsonify}},
     "url": {{note.url | jsonify}},
-    "excerpt": {{note.excerpt | jsonify}},
+    "excerpt": {{ note.content | strip_html | truncatewords:25 | jsonify }},
     "category": {{note.category | jsonify}},
     "tags": {{note.tags | jsonify}},
     "icon": {% if note.icon %}{{note.icon | jsonify}}{% else %}"sticky-note"{% endif %},

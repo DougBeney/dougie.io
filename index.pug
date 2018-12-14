@@ -29,7 +29,7 @@ layout: base
         #year {{ post.date | date: "%Y"}}
       #main-col.column
         .title.is-4 {{post.title}}
-        .excerpt {{post.excerpt}}
+        .excerpt {{ post.content | strip_html | truncatewords:25  }}
     | {% endfor %}
   .snippets#categorized
     //- This will display categorized posts

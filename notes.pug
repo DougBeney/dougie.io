@@ -13,7 +13,8 @@ layout: base
         input#search.input(type='text', placeholder='Find a note.')
 
   .snippets#all-posts
-    | {% for note in site.notes limit: 20 %}
+    | {% assign sorted = (site.notes | sort: 'date') | reverse %}
+    | {% for note in sorted limit: 20 %}
     a.post-snippet(href="{{note.url}}"): .columns.is-mobile
       #icon-col.column
         .
@@ -28,8 +29,12 @@ layout: base
         #month {{ note.date | date: "%B"}}
         #year {{ note.date | date: "%Y"}}
       #main-col.column
-        .title.is-4 {{note.title}}
-        .excerpt {{note.excerpt}}
+        .title.is-4
+          | {{note.title}}
+          | {% if note.author %}
+          |  by {{ note.author }}
+          | {% endif %}
+        .excerpt {{ note.content | strip_html | truncatewords:25 }}
     | {% endfor %}
   .snippets#categorized
     //- This will display categorized posts
