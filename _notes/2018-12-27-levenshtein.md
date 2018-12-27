@@ -19,10 +19,44 @@ It will return a value corresponding with the amount of letter changes required 
 
 ## Examples:
 
-| Word 1 | Word 2 | Levenshtein Difference | Explanation                         |
-| ------ | ------ | ---------------------- | ----------------------------------- |
-| Cat    | Bat    | 1                      | 'C' and 'B' are different.          |
-| Plain  | Plane  | 2                      | The last two letters are different. |
+| Word 1 | Word 2 | Levenshtein Distance | Explanation                         |
+| ------ | ------ | -------------------- | ----------------------------------- |
+| Cat    | Bat    | 1                    | 'C' and 'B' are different.          |
+| Plain  | Plane  | 2                    | The last two letters are different. |
+| Apple  | Apple  | 0                    | No difference                       |
+
+## The formula
+
+![Formula](/static/img/blog/levenshtein/formula.svg)
+
+Here are what the letters in the formula represent:
+
+```
+a = string #1
+b = string #2
+i = number of letters in string #1
+j = number of letters in string #2
+ai = Refers to a specific letter in string #1, using the i variable
+bj = Refers to a specific letter in string #2, using the j variable
+```
+
+**Source:** [Wikipedia](https://en.wikipedia.org/wiki/Levenshtein_distance)
+
+A recursive formula for levenshtein distance. A "recursive formula" means that you are running the same formula inside the formula - you can see that there are three levenshtein formulas (labeled as "lev") inside the levenshtein formula.
+
+**The formula in plain english:**
+
+The first thing you do is check whether `i` or `j` is equal to zero. If so, that particular levenshtein value will be the bigger number (max) of `i` or `j`.
+
+If neither `i` or `j` is equal to zero, you must run the levenshtein formula in three separate variations. For the first two variations, you add 1 to the result. In the last variation you will add 1 only if the letters `ai` and `bj` are not equal.
+
+Whichever variation produces the smallest number (min) is your levenshtein distance.
+
+**The three variations mentioned:**
+
+- In the first variation of the levinshtein distance you plug in the same values except you substract 1 from `i`.
+- In the second variation, you subtract 1 from `j`.
+- In the final variation, you subract 1 from both `i` and `j`.
 
 ## Implementing this algorithm in code
 
