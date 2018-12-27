@@ -121,7 +121,7 @@ levenshtein("CaT", "cat")
 # 2
 
 levenshtein("CaT", "cat", caseInsensitive=True)
-# # 0
+# 0
 
 levenshtein("apple", "orange")
 # 5
