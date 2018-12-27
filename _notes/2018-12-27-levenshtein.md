@@ -54,9 +54,9 @@ Whichever variation produces the smallest number (min) is your levenshtein dista
 
 **The three variations mentioned:**
 
-- In the first variation of the levinshtein distance you plug in the same values except you substract 1 from `i`.
+- In the first variation of the levinshtein distance you plug in the same values except you subtract 1 from `i`.
 - In the second variation, you subtract 1 from `j`.
-- In the final variation, you subract 1 from both `i` and `j`.
+- In the final variation, you subtract 1 from both `i` and `j`.
 
 ## Implementing this algorithm in code
 
@@ -80,7 +80,7 @@ Whichever variation produces the smallest number (min) is your levenshtein dista
                   0
                   1)))))
 
-;;; Convienience function
+;;; Convenience function
 (defun levenshtein (a b &key (case-insensitive nil))
   (when case-insensitive
     (setq a (string-downcase a))
@@ -117,12 +117,12 @@ def levenshtein(a, b, caseInsensitive=False):
     return lev(a, b, len(a), len(b))
 
 
-print(levenshtein("CaT", "cat"))
+levenshtein("CaT", "cat")
 # 2
 
-print(levenshtein("CaT", "cat", caseInsensitive=True))
+levenshtein("CaT", "cat", caseInsensitive=True)
 # # 0
 
-print(levenshtein("apple", "orange"))
+levenshtein("apple", "orange")
 # 5
 ```
