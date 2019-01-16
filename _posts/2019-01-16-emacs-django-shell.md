@@ -30,4 +30,4 @@ This elisp function prompts the user to locate their manage.py file. It then tem
 **Notes**:
 
 - This does indeed work with virtual environments. I use [pyvenv](https://github.com/jorgenschaefer/pyvenv) as it has a very useful `pyvenv-activate` command for activating virtualenvs.
-- Code completion works perfectly in this shell by making use of [lsp-mode](https://github.com/emacs-lsp/lsp-mode). With lsp-mode, make sure to `pip install 'python-language-server[all]` in your virtualenv for it to work.
+- Code completion works perfectly in this shell by making use of [lsp-mode](https://github.com/emacs-lsp/lsp-mode). With lsp-mode, make sure to `pip install 'python-language-server[all]'`. If you're using a virtualenv, make sure to install this in your virtualenv as well. Btw, those single quotes are important in that pip install command.
