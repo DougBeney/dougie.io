@@ -23,7 +23,9 @@ tags: [Coding, Emacs]
 
 ## Commentary
 
-I was looking for an easy way to access the Django shell in Emacs. Previously, I used the
+I was looking for an easy way to access the Django shell in Emacs. Previously, I used `ansi-term` and just ran `./manage.py shell` like normal. The big problem with this method was that I didn't get all of the awesome code-completion and similar features that I would get from the `run-python` shell.
+
+This elisp function prompts the user to locate their manage.py file. It then temporarily sets the "python shell interpreter" to manage.py and adds "shell" to the argument of manage.py. `run-python` is called. It uses `python-shell-calculate-command` that basically pieces together the interpreter and args variable we set earlier.
 
 **Notes**:
 
