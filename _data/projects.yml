@@ -26,22 +26,15 @@
   thumbnail: /static/img/projects/pickachu.png
   description: A Color, Date, and File chooser for Vim/NeoVim.
 
-# - title: DougSheets
-#   users: 'New!'
-#   users_metric: ''
-#   url: https://github.com/DougBeney/DougSheets
-#   #thumbnail: https://jekyll-pug.dougie.io/static/img/open-graph.png
-#   description: An innovative spreadsheet application that makes it easy for developers to create powerful data filtering scripts.
-
 - title: User-Agent 007
-  users: '3470+'
+  users: '6500+'
   users_metric: users
   url: https://addons.opera.com/en/extensions/details/user-agent-007/
   description: An Opera add-on to intuitively change your user-agent of websites you visit.
   thumbnail: https://addons.opera.com/media/CACHE/images/extensions/86/229286/1.0.0-rev1/images/e5bd9aa32cd3f3100a8de7122a50ecf6/901507868879ee111460339c5575d26b.jpg
 
 - title: Popsicle
-  users: '110+'
+  users: '160+'
   users_metric: users
   url: https://chrome.google.com/webstore/detail/popsicle-a-minimalist-new/loigpbgkmjjhjodnhlpmbjmojchpdjih?hl=en
   description: A very minimal New Tab extension for Google Chrome.
