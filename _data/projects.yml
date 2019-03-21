@@ -1,5 +1,12 @@
+- title: DougBeney.com
+  users: 'My Writing Portfolio'
+  users_metric:
+  url: https://dougbeney.com
+  thumbnail: /static/img/projects/dougbeney.com.jpg
+  description: "Portfolio website for my freelance business writings."
+
 - title: Vibrato Notes
-  users: 'Unreleased'
+  users: 'Unreleased - Open Source'
   users_metric:
   url: https://vibrato.app
   thumbnail: /static/img/projects/vibrato.png
