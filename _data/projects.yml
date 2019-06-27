@@ -12,6 +12,13 @@
   thumbnail: /static/img/projects/vibrato.png
   description: "An extensible open-source note-taking application for all of your devices: Vibrato Notes."
 
+- title: Pocket Casts Bulk Operations
+  users: 'Unknown'
+  users_metric:
+  url: https://pocketcasts.dougie.io
+  thumbnail: /static/img/projects/pocketcasts.png
+  description: "Easily manage all of your PocketCasts.com subscriptions."
+
 - title: Jekyll-Bliss
   users: 'NEW'
   users_metric:
