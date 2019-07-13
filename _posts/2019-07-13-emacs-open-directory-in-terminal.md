@@ -1,5 +1,5 @@
 ---
-title: Here's How to Open a Terminal in Your Current Emacs Working Directory
+title: Here's How to Open a Terminal App in Your Current Emacs Working Directory
 date: 2019-07-13
 icon: pencil-square
 category: Emacs
