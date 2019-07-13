@@ -4,6 +4,7 @@ date: 2019-01-16
 icon: pencil-square
 category: Emacs
 tags: [Coding, Emacs]
+slug: django-shell
 ---
 
 ## Demo
