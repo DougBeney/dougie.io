@@ -20,7 +20,8 @@ You are going to have to change the **"konsole --workdir "** part depending on w
 {% highlight elisp %}
 (defun open-terminal-in-workdir ()
   (interactive)
-    (call-process-shell-command (concat "konsole --workdir " default-directory) nil 0))
+  (call-process-shell-command
+   (concat "konsole --workdir " default-directory) nil 0))
 
 (global-set-key (kbd "C-c t") 'open-terminal-in-workdir)
 {% endhighlight %}
@@ -48,7 +49,8 @@ If you are inside a project, the terminal will open in its root. If you are edit
   (let ((workdir (if (projectile-project-root)
                      (projectile-project-root)
                    default-directory)))
-    (call-process-shell-command (concat "konsole --workdir " workdir) nil 0)))
+    (call-process-shell-command
+     (concat "konsole --workdir " workdir) nil 0)))
 
 (global-set-key (kbd "C-c t") 'open-terminal-in-workdir)
 {% endhighlight %}
