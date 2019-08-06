@@ -1,4 +1,7 @@
+title: dougie.io
+description: Business, Technology, and Practicality. Written by Doug Beney
 url: https://dougie.io
+author: Doug Beney
 
 paginate: 20
 paginate_path: /:num/
