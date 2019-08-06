@@ -3,7 +3,7 @@ type: api
 ---
 
 [
-{% assign sorted = (site.notes | sort: 'date') | reverse %}
+{% assign sorted = site.notes | sort: 'date' | reverse %}
 {% for note in sorted %}{% unless note.draft %}
 {
     "title": {{note.title | jsonify}},

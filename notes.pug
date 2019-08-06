@@ -13,7 +13,7 @@ layout: base
         input#search.input(type='text', placeholder='Find a note.')
 
   .snippets#all-posts
-    | {% assign sorted = (site.notes | sort: 'date') | reverse %}
+    | {% assign sorted = site.notes | sort: 'date' | reverse %}
     | {% for note in sorted limit: 20 %}
     a.post-snippet(href="{{note.url}}"): .columns.is-mobile
       #icon-col.column
