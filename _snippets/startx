@@ -1,8 +1,0 @@
----
-title: Make Xorg server start at user login
-description: Add this to your bash profile or zprofile to have the command 'startx' run on login
----
-
-if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
-  exec startx
-fi

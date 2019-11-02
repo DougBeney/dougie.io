@@ -29,11 +29,10 @@ collections:
     permalink: /s/:path
     output: true
 
-include: [_redirects] # For Neflify
+include: [_redirects] # For Netlify
 sass:
   sass_dir: _sass/
 
 plugins:
   - jekyll-paginate
   - jekyll-feed
-
