@@ -1,5 +1,5 @@
 ---
-title: How to Upgrade All of Your Python Packages With pip Using One Simple Command
+title: How to Update All of Your Python Packages With pip Using One Simple Command
 date: 2020-02-05
 icon: code
 category: Answers
