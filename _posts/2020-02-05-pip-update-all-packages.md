@@ -26,7 +26,7 @@ First of all, **do not attempt this if your PIP packages are installed on the ro
 
 If you type `sudo` before `pip install`, you are doing things wrong. First, switch to a setup where `pip install` installs your packages into your home directory. Mine installs to `~/.local/lib/python3.7/site-packages`.
 
-If you were to update system packages using pip, that would cause big problems because some Python packages are installed by your system. Any changes pip makes will be overwritten during an operating system update.
+If you were to update system packages using pip, that would cause big problems because some Python packages are installed by your system. Any changes PIP makes will be overwritten during an operating system update.
 
 ### The Command
 
@@ -64,7 +64,7 @@ And finally, we feed all of those packages to the command `pip install -U` using
 
 The command I mentioned is not fun to type if you want to update your packages often.
 
-We can solve this with a bash alias. Watch [this tutorial](https://www.youtube.com/watch?v=CUePYTZuJ1E) for a good overview of bash aliases if you're new to it.
+We can solve this with an alias. Watch [this tutorial](https://www.youtube.com/watch?v=CUePYTZuJ1E) for a good overview of aliases if you're new to it.
 
 **The Alias:**
 
