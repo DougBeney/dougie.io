@@ -26,7 +26,7 @@ First of all, **do not attempt this if your PIP packages are installed on the ro
 
 If you type `sudo` before `pip install`, you are doing things wrong. First, switch to a setup where `pip install` installs your packages into your home directory. Mine installs to `~/.local/lib/python3.7/site-packages`.
 
-If you were to update system packages using pip, that would cause big problems because some Python packages are installed by your system. A lot of change you make will be overwritten during an operating system update.
+If you were to update system packages using pip, that would cause big problems because some Python packages are installed by your system. Any changes pip makes will be overwritten during an operating system update.
 
 ### The Command
 
