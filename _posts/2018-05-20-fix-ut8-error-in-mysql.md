@@ -1,5 +1,5 @@
 ---
-title: How To Fix the "utf8mb4_unicode_520_ci" Error When Importing a SQL File
+title: "FIX \"Unknown collation: utf8mb4_unicode_520_ci\" MySQL Import Error"
 date: 2018-05-20
 icon: database
 category: Answers
