@@ -1,5 +1,5 @@
 ---
-title: "Could Not Connect" Airpods + Kindle Paperwhite FIX (Works with Kindle Oasis too)
+title: "\"Could Not Connect\" Airpods + Kindle Paperwhite FIX (Works with Kindle Oasis too)"
 date: 2019-07-20
 icon: book
 category: Answers
