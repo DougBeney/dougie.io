@@ -1,5 +1,5 @@
 ---
-title: How to Upgrade All of Your Python Packages With Pip Using One Simple Command
+title: How to Upgrade All of Your Python Packages With pip Using One Simple Command
 date: 2020-02-05
 icon: code
 category: Answers
@@ -8,9 +8,9 @@ tags: [Python]
 
 **Don't want to read and just want the solution?** [Click here to jump to the solution](#tldr-copy-and-paste-solution)
 
-Pip doesn't have a built-in command to update all of its packages. This is likely because it is recommended to have a [virtualenv](https://virtualenv.pypa.io/en/latest/) for each new project you create.
+pip doesn't have a built-in command to update all of its packages. This is likely because it is recommended to have a [virtualenv](https://virtualenv.pypa.io/en/latest/) for each new project you create.
 
-In that sort of workflow, you would be guarenteed the latest, most up-to-date packages whenever you start a project. If you'd want to upgrade those packages, you'd keep a requirements.txt file that documents all of your needed packages and you could upgrade using that.
+In that sort of workflow, you would be guaranteed the latest, most up-to-date packages whenever you start a project. If you'd want to upgrade those packages, you'd keep a requirements.txt file that documents all of your needed packages and you could upgrade using that.
 
 **However...**
 
@@ -20,17 +20,17 @@ One of my favorites is [rtv](https://github.com/michael-lazar/rtv), a client for
 
 ![rtv, a Python-based terminal app](/static/img/blog/pip-upgrade-all/rtv.png)
 
-## How to Update All PIP Packages
+## How to Update All pip Packages
 
 ### Before you proceed: Be safe
 
-First of all, **never install Python packages as root using a commmand like `sudo pip install`**.
+First of all, **never install Python packages as root using a command like `sudo pip install`**.
 
 If you type `sudo` before `pip install`, you are doing things wrong.
 
 Switch to a setup where `pip install` installs your packages into your home directory. Mine installs to `~/.local/lib/python3.7/site-packages`.
 
-If you were to update system packages using pip, that would cause big problems because some Python packages are installed by your system. Any changes PIP makes will be overwritten during an operating system update.
+If you were to update system packages using pip, that would cause big problems because some Python packages are installed by your system. Any changes pip makes will be overwritten during an operating system update.
 
 ### The Command
 
@@ -44,7 +44,7 @@ It's actually not that complex. Here is have it does:
 
 **1.** Get a list of user-installed Python packages using `pip freeze --user`. (Feel free to try out that command on your own to see what it does)
 
-**2.** Using `cut`, we cut off the unncessary info from that command so we are left with just a list of package names.
+**2.** Using `cut`, we cut off the unnecessary info from that command so we are left with just a list of package names.
 
 For example, it would convert this output of `pip freeze --user`...
 
