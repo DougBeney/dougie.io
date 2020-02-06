@@ -6,6 +6,20 @@ tags: [Open-Source, Linux]
 icon: desktop
 ---
 
+## Update - February 6, 2020
+
+So, I actually used OpenSUSE as a daily driver for a few months. What I loved about it was:
+
+- Stable and bleeding edge
+- Zypper is a nice package manager with neat features
+- YaST is pretty cool
+
+But I had to switch away from it. The biggest reason being that I feel it is a distro that gets in your way while imposing its own way of doing things.
+
+Simple example is printing. You **cannot** use the regular KDE printer settings. You have to open YaST (which requires you to enter your root password and has a slow startup time). YaST has its own printer settings and it isn't super intuitive to use.
+
+I prefer distros that stay out of your way as much as possible. I am currently using Kubuntu.
+
 ## The Reasons
 
 ### Full-disk encryption is a pain during setup
@@ -14,7 +28,7 @@ By default, it encrypts your boot partition. This means you have to enter your d
 
 **EDIT**: Since writing I have noticed [this fix](https://en.opensuse.org/SDB:Encrypted_root_file_system) by OpenSUSE on how to avoid having to enter your password twice. Good to see they documented a fix but it is still far too hacky for the end-user.
 
-**EDIT 2**: So, I learned that it is actually very valid for SUSE to encrypt /boot. Someone who compromises your system could replace the kernel or initrd with a trojan'd version of it. This modified version could include a keylogger so that once you enter your password, it is recorded. Now, the situation of someone doing this to your computer without you knowing is extremely unlikely unless you're a person in power or maybe a boss with a smart disgruntled employee. Still, it's cool to see that SUSE took this into consideration. The question now is whether SUSE should implement that fix by default so an inexperienced end user wouldn't have to deal with it.
+**EDIT 2**: So, I learned that it is actually ~~very~~ somewhat valid for SUSE to encrypt /boot. Someone who compromises your system could replace the kernel or initrd with a trojan'd version of it. This modified version could include a keylogger so that once you enter your password, it is recorded. Now, the situation of someone doing this to your computer without you knowing is extremely unlikely unless you're a person in power or maybe a boss with a smart disgruntled employee. Still, it's cool to see that SUSE took this into consideration. The question now is whether SUSE should implement that fix by default so an inexperienced end user wouldn't have to deal with it.
 
 ### 4.7gb ISO
 
@@ -43,4 +57,3 @@ You're also asked for the root password when doing things like [adding a printer
 ## Final Notes
 
 I believe OpenSUSE is close to having a great KDE distribution but just needs to iron-out some kinks. I could go on to mention further reasons why I don't use OpenSUSE but that gets into KDE defaults which I don't believe are fair to mention.
-
