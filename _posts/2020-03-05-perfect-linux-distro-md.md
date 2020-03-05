@@ -13,9 +13,9 @@ The three most important principals for a desktop Linux distribution in my opini
 Other than those three principals, it's also important that it...
 
 - Doesn't get in your way. OpenSUSE is a big offender in this matter because of YaST. Other offenders could be things like strange SELinux policies that throw you off, a package manager that's very slow to use (Fedora's DNF gave me this problem), and awkward defaults.
-- Has all the software you ever need. Ubuntu and Arch are the best to this. Thanks to PPAs and the AUR.
+- Has all the software you ever need. Ubuntu and Arch are the best at this. Thanks to PPAs and the AUR.
 - Makes it easy to upgrade from major version to major version of the distro (For some, you have to re-install the complete distro to upgrade.)
-- If it's a beginner-friendly Linux distribution, it'd be nice if some safe firewall rules are put in place. Perhaps this contradicts my "doesn't get in your way" idea, but I believe a desktop distribution shouldn't allow incoming network requests by defualt.
+- If it's a beginner-friendly Linux distribution, it'd be nice if some safe firewall rules are put in place. Perhaps this contradicts my "doesn't get in your way" idea, but I believe a desktop distribution shouldn't allow incoming network requests by default. This is not a super import principal to me bear in mind.
 
 ---
 
