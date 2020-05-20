@@ -4,6 +4,12 @@ title: The Perfect Desktop Linux Distribution
 date: 2020-03-05 12:15 -0500
 ---
 
+### Update
+
+Yeah, so a distro-hopper never settles. The logic is still strong in this post, however I'm still back and fourth on the idea of a point release like Ubuntu vs. rolling release. I'm currently using [Solus](https://getsol.us).
+
+---
+
 The three most important principals for a desktop Linux distribution in my opinion:
 
 - Have a stable base (kernel, system libraries, etc)
