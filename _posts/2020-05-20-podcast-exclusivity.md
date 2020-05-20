@@ -1,7 +1,7 @@
 ---
 layout: post
 title: On Spotify Forming Exclusive Deals With Podcasts – Joe Rogan, Last Podcast On The Left, more?
-date: 2020-05-20 12:59 -0500
+date: 2020-05-20 12:59
 category: decentralization
 ---
 
