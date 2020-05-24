@@ -3,6 +3,7 @@ layout: post
 title: On Spotify Forming Exclusive Deals With Podcasts – Joe Rogan, Last Podcast On The Left, more?
 date: 2020-05-20 12:59
 category: decentralization
+icon: spotify
 ---
 
 Podcasting is a great concept. You can distribute your podcast on multiple platforms and provide one or more RSS feeds. With these RSS feeds you can use any number of podcasting apps. There is very healthy competition amongst these apps. So much so that there is always room for a new app that serves a particular niche of podcast listeners better. I have purchased and donated to many of these apps over the years, supporting both solo developers and small teams that have no goal other than to improve the way you listen to and discover podcasts.

@@ -2,7 +2,8 @@
 layout: post
 title: How to Use a Trezor Cryptocurrency Wallet On Solus
 date: 2020-05-23 17:57
-category: linux
+category: cryptocurrency
+icon: bitcoin
 ---
 
 Getting a Trezor bitcoin wallet to work with Solus is actually quite easy.
