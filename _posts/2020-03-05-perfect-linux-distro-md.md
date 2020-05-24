@@ -2,6 +2,7 @@
 layout: post
 title: The Perfect Desktop Linux Distribution
 date: 2020-03-05 12:15 -0500
+category: linux
 ---
 
 ### Update
