@@ -19,6 +19,12 @@
   thumbnail: /static/img/projects/pocketcasts.png
   description: "Easily manage all of your PocketCasts.com subscriptions."
 
+- title: Sanemacs
+  users: 'Unknown'
+  users_metric:
+  url: https://sanemacs.com
+  description: "A minimal Emacs config that does just enough and nothing more."
+
 - title: Jekyll-Bliss
   users: 'NEW'
   users_metric:
