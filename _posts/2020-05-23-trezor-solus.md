@@ -20,7 +20,7 @@ sudo eopkg it rpm
 
 ![Trezor Bridge Install](/static/img/blog/solus-trezor/trezor-bridge.png)
 
-The next step is to downloadl the Trezor Bridge by visiting this URL:
+The next step is to download the Trezor Bridge by visiting this URL:
 
 [https://wallet.trezor.io/#/bridge](https://wallet.trezor.io/#/bridge)
 
