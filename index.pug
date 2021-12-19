@@ -1,55 +1,21 @@
 ---
-title: dougie.io - Coding & Business
-layout: base
+title: The Website of Dougie Beney
+layout: bare
 ---
 
-.blog-roll.container
-  .columns#tab-columns
-    .column
-      .tabs.js: ul
-        li.item#All.is-active: a All
-    .column.is-3
-      div(class="control")
-        input#search.input(type='text', placeholder='Find a blog post.')
+style body {padding-bottom: 0; min-height: 0}
+#homepage
+    .home-header
+        p The Website of
+        h1 Dougie Beney
 
-  .snippets#all-posts
-    | {% for post in paginator.posts %}
-    a.post-snippet(href="{{post.url}}"): .columns.is-mobile
-      #icon-col.column
-        .
-          {% if post.icon %}
-            {% assign icon_name = post.icon %}
-          {% else %}
-            {% assign icon_name = "newspaper-o" %}
-          {% endif %}
-        span(class="fa fa-{{icon_name}}")
-      #date-col.column.is-2
-        #day {{ post.date | date: "%e"}}
-        #month {{ post.date | date: "%B"}}
-        #year {{ post.date | date: "%Y"}}
-      #main-col.column
-        .title.is-4 {{post.title}}
-        .excerpt {{ post.content | strip_html | truncatewords:25  }}
-    | {% endfor %}
-  .snippets#categorized
-    //- This will display categorized posts
-  .snippets#search-results
-    //- This will display search results when user types
-
-  // Storing variables that will be accessed through javascript
-  posts-type blog
-  posts-per-page {{paginator.per_page}}
-  posts-showing {{paginator.page | times: paginator.per_page}}
-
-  //- Pagination for those without javascript
-  nav.pagination.no-js(role='navigation', aria-label='pagination')
-    | {% if paginator.previous_page %}
-    a.pagination-previous(href="{{paginator.previous_page_path}}") Previous
-    | {% endif %}
-    | {% if paginator.next_page %}
-    a.pagination-next(href="{{paginator.next_page_path}}") Next page
-    | {% endif %}
-
-  //- Pagination for those with javascript
-  nav.pagination.js(role='navigation', aria-label='pagination')
-    a.button#pagination-more-button More
+    .bio
+        .avatar-cont: .avatar
+        p.bio-text I've had a strong passion for software development since the age of 12. Check out some of my latest projects here!
+    .links
+        a(href="/articles") Articles
+        a(href="/notes") Thing's I've learned about
+        a(href="https://www.instagram.com/dougbeney") Instagram
+        a(href="https://www.twitter.com/dougbeney") Twitter
+        a(href="/projects") My Projects
+        a(href="/contact")#contact Contact Me

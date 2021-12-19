@@ -1,7 +1,8 @@
 nav#mainnav
   a#logo(href="/") dougie.io
   ul
-    li: a(href="/", class="{%if page.name=='index.html'%}active{%endif%}") Articles
+    li: a(href="/", class="{%if page.name=='index.html'%}active{%endif%}") Home
+    li: a(href="/articles/", class="{%if page.name=='articles.html'%}active{%endif%}") Articles
     li: a(href="/notes", class="{%if page.name=='notes.html'%}active{%else%}{{page.name}}{%endif%}") Notes
     li: a(href="/projects", class="{%if page.name=='projects.html'%}active{%else%}{{page.name}}{%endif%}") Projects
     li: a(href="/contact", class="{%if page.name=='contact.html'%}active{%else%}{{page.name}}{%endif%}") Contact

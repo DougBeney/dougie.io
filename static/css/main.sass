@@ -31,6 +31,7 @@ body
   position: relative
   min-height: 100%
   padding-bottom: 54px
+  animation: fadeIn 1s forwards
 
 // Footer!
 footer.footer
@@ -46,3 +47,63 @@ footer.footer
     letter-spacing: 1px
   a
     color: #612FAA !important
+
+#homepage
+  max-width: 500px
+  margin: 0 auto
+  .home-header
+    text-align: center
+    margin-top: 20px
+    line-height: 1
+    p, h1
+      margin: 0
+    p
+      font-size: 0.9em
+      margin-bottom: 5px
+      color: gray
+    h1
+      font-weight: bolder
+      font-size: 2em
+  .bio
+    display: flex
+    padding: 0 10px
+    align-items: center;
+    justify-content: center
+    padding: 40px 30px
+
+    .avatar-cont
+      width: 50%
+      padding-right: 30px
+    .avatar
+      height: auto
+      width: 100%
+      padding-bottom: 100%
+      margin: 0 auto
+      background-color: gray
+      background-image: url(/static/img/dougie.jpg)
+      background-position: center
+      background-size: cover
+      border-radius: 100%
+    .bio-text
+      width: 50%
+
+  .links
+    padding: 0 30px
+    a
+      color: #605b5b
+      display: block
+      margin-bottom: 30px
+      font-size: 1.2em
+      text-decoration: underline
+
+      &#contact
+        margin-bottom: 0
+
+      /* &#contact
+      /*   text-align: right
+
+@keyframes fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
