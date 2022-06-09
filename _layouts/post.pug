@@ -10,5 +10,10 @@ layout: base
     | {% endif %}
   #post-meta
     #date {{page.date | date: "%A - %B %e, %Y"}}
+
+  a.donate(href="https://www.buymeacoffee.com/DougBeney")
+    span.fa.fa-coffee
+    span Did this post help you? Click to buy me a coffee :-)
+
   | {{content}}
   | {% include comments.html %}
