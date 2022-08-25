@@ -1,4 +1,6 @@
 _site/
+_build/
+node_modules/
 Gemfile.lock
 .ruby-version
 *.swp
