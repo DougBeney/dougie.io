@@ -1,0 +1,112 @@
+#+title: Recipes
+
+* Mains
+** Seitan beef thing (78 grams of protein)
+*** Ingredients
+- 100 grams vital wheat gluten
+- 30 grams of all purpose flour
+- 1 tsp garlic powder
+- 1 tsp sage or (italian seasoning)
+- 1/2 tsp salt
+- 1/2 tsp black pepper
+- 1 rice paper
+
+*** Instructions
+1. Combine all ingredients (except rice paper) in a bowl
+2. Slowly add water and mix into dough ball
+3. Form into a steak
+4. Wet rice paper and cover steak
+5. Coat outside of steak as you please. Salt, paprika, sauce, whatever
+6. Cover in parchment paper and then aluminum foil
+7. Steam for 30 minutes
+
+** Power buddah bowl
+
+<iframe width="1712" height="677" src="https://www.youtube.com/embed/jww0stktm1e?start=271" title="vegan high protein full day of eating | macros included (bulking)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+*** Ingredients
+
+- 7 baby bock choy
+- 1 1/3 cup cooked chick peas
+- 1.5 cups cooked rice
+- bell pepper cut up
+- 1/4 cup brocoli
+- quorn chicken
+- [[Peanut sauce (32.5 grams of protein)]]
+- microgreens
+
+* Sauces
+** Alfredo sauce (64 grams of protein)
+
+Makes 6 servings apparently.
+
+*** Ingredients
+- 1 1/2 cups of raw cashews (36 grams of protein) $4.32
+- 1/2 onion
+- 6 cloves of garlic
+- 2 cups of plant milk (4grams if using low protein milk, 16-20 grams of protein if using high protein milk)
+- 1/4 cup nutritional yeast (4 tbs - 8 grams of protein)
+- 1 tbs lemon juice
+- 1 tsp salt
+
+*** Instructions
+1. Pour boiling water (4 cups) over cashews. Let soak for 5 minutes
+2. Saute onion and garlic
+3. Drain cashews.
+4. Blend all ingredients
+
+** Peanut sauce (32.5 grams of protein)
+
+maybe like 1-2 servings
+
+- 1/2 cup peanut butter (32.5 grams of protein)
+- 2 tbs cilantro
+- 1/2 tbs ginger
+- 2 tbs maple syrup
+- 2 tbs lime juice
+- 2 tbs soy sauce
+- 1/2 tsp sesame oil
+- 1/4 tsp garlic powder
+- 1/3 cup water
+
+
+* Draft from markdown
+
+## Fettuchino tofu alfredo
+
+![Fettuchino tofu alfredo](/static/img/notes/recipes/fet-alfredo-tofu.jpg)
+
+### Ingredients
+
+#### Sauce
+
+-
+
+####
+
+## Power Buddah Bowl
+
+<iframe width="1712" height="677" src="https://www.youtube.com/embed/JWw0STKtM1E?start=271" title="Vegan High Protein Full Day of Eating | MACROS INCLUDED (BULKING)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Ingredients
+
+#### Sauce:
+
+- 1/2 cup peanut butter
+- 2 tbs cilantro
+- 1/2 tbs ginger
+- 2 tbs maple syrup
+- 2 tbs lime juice
+- 2 tbs soy sauce
+- 1/2 tsp sesame oil
+- 1/4 tsp garlic powder
+- 1/3 cup water
+
+#### Bowl:
+
+- 7 baby bock choy
+- 1 1/3 cup cooked chick peas
+- 1.5 cups cooked rice
+- Bell pepper cut up
+- 1/4 cup brocoli
+- Quorn chicken

@@ -36,3 +36,4 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-feed
+  - jekyll-org
