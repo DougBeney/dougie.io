@@ -1,0 +1,71 @@
+#+title: Crypto stuff
+#+date: 2022-10-30
+#+icon: bitcoin
+#+category: Computer-Science
+#+tags: [Bitcoin, Cryptocurrency]
+
+I will learn about one new cryptocurrency every day for at least 30 days.
+
+* Coin / Token Information
+
+** GALA
+
+[[https://app.gala.games/][Website]]
+
+Blockchain game company.
+
+ #+BEGIN_QUOTE
+"We believe the blockchain should be invisible in our games. We use simple game mechanics that all players can enjoy, whether or not they consider themselves to be blockchain pros."
+ #+END_QUOTE
+
+GALA is their Ethereum token.
+
+** Shiba Token
+
+[[https://www.shibatoken.com/][Website]] · [[https://raw.githubusercontent.com/shytoshikusama/woofwoofpaper/main/SHIBA_INU_WOOF_WOOF.pdf][Woofpaper]]
+
+[Woofpaper](https://raw.githubusercontent.com/shytoshikusama/woofwoofpaper/main/SHIBA_INU_WOOF_WOOF.pdf)
+
+Much like Dogecoin, Shiba is a meme coin.
+
+It's biggest difference between itself and Dogecoin is that Dogecoin is a Bitcoin fork. It has its own blockchain, miners and nodes. Shiba is an Ethereum Token.
+
+SHIB is their main currency. It started with a supply of one quadrillion. Then the founder gave 50% of that to Uniswap, a decentralized crypto exchange. Also Vitalik Buterin burned 410 trillion tokens.
+
+In addition to that, they also have *LEASH* which supposedly has "rewards" but there [hasn't been any so far it seems](https://www.reddit.com/r/SHIBADULTS/comments/onz4gi/leash_rewards/). It has a very limited supply of "107,646 tokens".
+
+Its last token is *BONE*. It has 250 million tokens. The main purpose of this is a governance token. Owning BONE would give you the ability to vote on decisions regarding the Shiba projects thanks to their [Doggy DAO](https://blog.shibaswap.com/doggy-dao-is-here-woof-3/).
+
+Its main advantage over Dogecoin is that they have an ecosystem around them - the 3 tokens with different benefits, their NFT project(s) such as Shiba Artist Incubator, [their metaverse endeavors](https://blog.shibaswap.com/shib-the-metaverse-canyon-first-concept-art-reveal/). Being a token instead of a fork of a coin gives the developers less technical debt (having to maintain/update code for a blockchain, dealing with miners nodes). Instead, they let Ethereum focus on that and they just maintain their token's contract code. It's community run thanks to the DAO. The stronger the community is, the more they could branch out.
+
+** Galxe
+
+[[https://galxe.com][Website]]
+
+It sounds similar to [[https://www.lens.xyz/][Lens]] in terms of 'digital identity / credentials'. Lens sounds much more fully featured and promising for social communities. Galxe has these weird [[https://galxe.com/spaces]["Spaces" and "Campaigns"]].
+
+They have a developer API for devs to integrate into your apps.
+
+They have an OAT - On-chain Achievement Token that can be granted to users in your community as a reward. They're an NFT more or less.
+
+They also mention 'Galxe NFT' which I'm not sure is the same thing. They have different ways to gamify your NFTs such as 'Single drop NFTs' (whatever that is) and mystery box campaigns, as well as loyalty points.
+
+You may also implement their Galxe ID (web3 profile). You can implement Galxe Vote too which would allow for building custom governance systems.
+
+* Concepts
+
+** Yield Farming vs. Staking vs. Liquidity Mining
+
+*Staking* is a concept for proof of stake coins. You are able to stake your coins as collateral for validating transactions. You are then rewarded just like with mining.
+
+To mine yourself with your own rig, you must stake at least 32 ETH. But there are pools of people with combined funds that allow you to earn from staking without that minimum. [Rocket Pool](https://rocketpool.net/) is a popular one and all you do is swap your ETH for rETH.
+
+*Yield farming* is lending crypto. It has high risks but higher reward and staking.
+
+*Liquidity mining* is when you lend a currency pair - ex ETH/SHIB. You earn interest. You also get a token as a receipt which can be sold to get your money back.
+
+*Resources:*
+
+- [[https://phemex.com/academy/yield-farming-vs-staking-vs-liquidity-mining][Phemex - Yield Farming vs. Staking vs. Liquidity Mining: All You Need to Know]]
+- [[https://medium.com/everstake/staking-or-liquidity-providing-which-is-right-for-you-a382efb034a9][Everstake - Staking or Liquidity Providing: Which is Right For You?]]
+- [[https://academy.shrimpy.io/lesson/what-is-liquidity-mining][Shrimpy - What is Liquidity Mining]]
