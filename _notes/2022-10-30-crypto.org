@@ -20,11 +20,10 @@ Blockchain game company.
 
 GALA is their Ethereum token.
 
-** Shiba Token
+** Shiba Token (SHIB, BONE, LEASH)
 
 [[https://www.shibatoken.com/][Website]] · [[https://raw.githubusercontent.com/shytoshikusama/woofwoofpaper/main/SHIBA_INU_WOOF_WOOF.pdf][Woofpaper]]
 
-[Woofpaper](https://raw.githubusercontent.com/shytoshikusama/woofwoofpaper/main/SHIBA_INU_WOOF_WOOF.pdf)
 
 Much like Dogecoin, Shiba is a meme coin.
 
@@ -32,13 +31,13 @@ It's biggest difference between itself and Dogecoin is that Dogecoin is a Bitcoi
 
 SHIB is their main currency. It started with a supply of one quadrillion. Then the founder gave 50% of that to Uniswap, a decentralized crypto exchange. Also Vitalik Buterin burned 410 trillion tokens.
 
-In addition to that, they also have *LEASH* which supposedly has "rewards" but there [hasn't been any so far it seems](https://www.reddit.com/r/SHIBADULTS/comments/onz4gi/leash_rewards/). It has a very limited supply of "107,646 tokens".
+In addition to that, they also have *LEASH* which supposedly has "rewards" but there [[https://www.reddit.com/r/SHIBADULTS/comments/onz4gi/leash_rewards/][hasn't been any so far it seems]]. It has a very limited supply of "107,646 tokens".
 
-Its last token is *BONE*. It has 250 million tokens. The main purpose of this is a governance token. Owning BONE would give you the ability to vote on decisions regarding the Shiba projects thanks to their [Doggy DAO](https://blog.shibaswap.com/doggy-dao-is-here-woof-3/).
+Its last token is *BONE*. It has 250 million tokens. The main purpose of this is a governance token. Owning BONE would give you the ability to vote on decisions regarding the Shiba projects thanks to their [[https://blog.shibaswap.com/doggy-dao-is-here-woof-3/][Doggy DAO]].
 
-Its main advantage over Dogecoin is that they have an ecosystem around them - the 3 tokens with different benefits, their NFT project(s) such as Shiba Artist Incubator, [their metaverse endeavors](https://blog.shibaswap.com/shib-the-metaverse-canyon-first-concept-art-reveal/). Being a token instead of a fork of a coin gives the developers less technical debt (having to maintain/update code for a blockchain, dealing with miners nodes). Instead, they let Ethereum focus on that and they just maintain their token's contract code. It's community run thanks to the DAO. The stronger the community is, the more they could branch out.
+Its main advantage over Dogecoin is that they have an ecosystem around them - the 3 tokens with different benefits, their NFT project(s) such as Shiba Artist Incubator, [[https://blog.shibaswap.com/shib-the-metaverse-canyon-first-concept-art-reveal/][their metaverse endeavors]]. Being a token instead of a fork of a coin gives the developers less technical debt (having to maintain/update code for a blockchain, dealing with miners nodes). Instead, they let Ethereum focus on that and they just maintain their token's contract code. It's community run thanks to the DAO. The stronger the community is, the more they could branch out.
 
-** Galxe
+** Galxe (GAL)
 
 [[https://galxe.com][Website]]
 
@@ -51,6 +50,16 @@ They have an OAT - On-chain Achievement Token that can be granted to users in yo
 They also mention 'Galxe NFT' which I'm not sure is the same thing. They have different ways to gamify your NFTs such as 'Single drop NFTs' (whatever that is) and mystery box campaigns, as well as loyalty points.
 
 You may also implement their Galxe ID (web3 profile). You can implement Galxe Vote too which would allow for building custom governance systems.
+
+** Render Token (RNDR)
+
+"Distributed GPU rendering on the blockchain"
+
+Founded by Jules Urbach, "a pioneer in computer graphics, streaming, and 3D rendering".
+
+"The Render Network is designed to connect users looking to perform render jobs with people who have idle GPUs to process the renders. Owners would connect their GPUs to the Render Network in order to receive and complete rendering jobs using OctaneRender. Users would send RNDR to the individual performing the render work and OTOY would receive a small percentage of RNDR for facilitating the transaction and running the Render Network."
+
+The company that owns the cloud rendering software is [[https://home.otoy.com/the-company/][OTOY]].
 
 * Concepts
 
