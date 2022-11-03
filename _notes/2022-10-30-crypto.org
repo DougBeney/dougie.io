@@ -24,7 +24,6 @@ GALA is their Ethereum token.
 
 [[https://www.shibatoken.com/][Website]] · [[https://raw.githubusercontent.com/shytoshikusama/woofwoofpaper/main/SHIBA_INU_WOOF_WOOF.pdf][Woofpaper]]
 
-
 Much like Dogecoin, Shiba is a meme coin.
 
 It's biggest difference between itself and Dogecoin is that Dogecoin is a Bitcoin fork. It has its own blockchain, miners and nodes. Shiba is an Ethereum Token.
@@ -61,7 +60,42 @@ Founded by Jules Urbach, "a pioneer in computer graphics, streaming, and 3D rend
 
 The company that owns the cloud rendering software is [[https://home.otoy.com/the-company/][OTOY]].
 
+** Ripple (XRP)
+
+*Resources:*
+
+[[https://cointelegraph.com/blockchain-for-beginners/what-is-ripple-a-beginners-guide-for-understanding-ripple][- Ripple (XRP): A beginner's guide to the digital asset built for global payments]]
+
 * Concepts
+
+** Bitcoin Lightning Network
+
+*Transaction speed:*
+
+- Visa handles 4,000 transactions per second with a maximum of 65,000 TPS
+- Bitcoin can only handle 7 transactions per second with the current block size of 1mb
+- With Proof of Stake, sharding, and rollups ETH might be able to do 20k to 100k TPS but currently only does 10-20.
+- Ripple is around 1,000 TPS
+- BCH coin raised the block size in Bitcoin and can do 24-92 TPS
+
+Bitcoin Lightening Network is an off-chain solution, meaning the transactions do not happen on the main Bitcoin blockchain. They eventually end up there but not at the beginning.
+
+*Example Lightening Transaction:*
+
+- Guy wants to buy coffee
+- Guy sets up a payment channel with the coffee shop
+- Both Guy and the coffee shop deposits a dcertain amount of money in a multi signature address. Coffee shop may deposit nothing if they offer no refunds
+- This multi signature address is like a safe that cannot be opened until both party agrees.
+- Guy can edit the agreement to deposit the amount of money to the coffee shop
+- With the payment channel, guy can order as much as he wants.
+- Once the payment channel is closed, it will be broadcasted to the bitcoin network.
+
+*Resources:*
+
+- [[https://www.youtube.com/watch?v=rrr_zPmEiME][Simply Explained: Bitcoin's Lightning Network, Simply Explained!]]
+- [[https://twitter.com/VitalikButerin/status/1277961594958471168?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1277961594958471168%7Ctwgr%5E%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fdecrypt.co%2F34204%2Fethereum-2-0-will-walk-and-roll-for-two-years-before-it-can-run][Vitalik Buterin on Twitter talking about ETH2 TPS]]
+- [[https://www.moonpay.com/blog/ethereum-merge-eth-2][The Ethereum Merge (ETH 2.0) explained]]
+- [[https://medium.datadriveninvestor.com/bitcoin-cash-explained-2ad3b527f54f][Bitcoin Cash | Explained]]
 
 ** Yield Farming vs. Staking vs. Liquidity Mining
 
