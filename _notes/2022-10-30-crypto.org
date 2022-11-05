@@ -62,9 +62,21 @@ The company that owns the cloud rendering software is [[https://home.otoy.com/th
 
 ** Ripple (XRP)
 
+XRP has extrmely small transactions. An average transaction cost of $0.0013927.
+
+It achieves this through not using proof of work and instead using a relatively small network or organizations (banks) to do the transaction validation. This makes XRP less decentralized than other cryptocurrencies. Also it depends on a for-profit organization, Ripple for its development.
+
+Validators are elected into the XRP UNL - Unique Node List. This is overseen by Ripple, the company.
+
 *Resources:*
 
 [[https://cointelegraph.com/blockchain-for-beginners/what-is-ripple-a-beginners-guide-for-understanding-ripple][- Ripple (XRP): A beginner's guide to the digital asset built for global payments]]
+
+** Polygon (MATIC)
+
+[[https://polygon.technology/][Website]]
+
+Polygon is a layer 2 solution for Ethereum. You run smart contracts on their network before going up to the Eteherum block chain. Its focus is scalability and they have partnerships with many large companies.
 
 * Concepts
 
